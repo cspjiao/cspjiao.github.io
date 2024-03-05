@@ -42,15 +42,9 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
-    design:
-      columns: '1'
+
   - block: experience
+    id: experience
     content:
       title: Experience
       # Date format for experience
@@ -62,30 +56,32 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: lecturer
+          company: Tianjing University
           company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+          company_logo: ''
+          location: Chinese
+          date_start: '2018-09-01'
+          date_end: '2021-11-01'
+          description: Taught computer science.
+        - title: Distinguished Professor
+          company: Hangzhou Dianzi University
+          company_url: ''
+          company_logo: ''
+          location: Chinese
+          date_start: '2021-12-01'
           date_end: ''
           description: |2-
-              Responsibilities include:
+              Research include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              * Graph neural
+              * Time series
+              * Representation learning
+
     design:
       columns: '2'
   - block: accomplishments
+    id: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
       title: 'Accomplish&shy;ments'
@@ -98,14 +94,15 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - certificate_url: ''
           date_end: ''
           date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
+          description: 'Facing the semantic complexity of graph-structured data, the applicant focuses on the challenges of diverse node types, diverse and sparse semantic information, complex topological attribute interaction and diverse generation mechanisms in complex graphs, and effectively breaks through the difficulties of complex graph attribute semantic diversity and topological attribute interaction. Promoted the generative integration of probabilistic graph model and deep learning method in node and sublayer surface, published 12 papers in AAAI, IJCAI, TKDE, TIST, WWW and other journal conferences as the first or corresponding author. And published the review paper "A Survey of Community Detection Approaches: From Statistical Modeling to Deep Learning "(TKDE 2023), cited more than 230 times by Google academics. He applied theoretical methods to social recommendation and knowledge graph, and his related results were published in SIGIR2019, SIGIR2022, WWW2023, and won the NLPCC2019 Outstanding Paper Award. Applied to Internet edge computing, related results are published in (TNSM 2021) and (IoT-J 2021), paper "EEDTO: an energy-efficient dynamic task offloading algorithm for blockchain-enabled IoT-edge-cloud orchestrated "computing" is included in ESI database as a highly cited paper - the number of citations has classified it as the best in its academic field
+'
+          icon: ''
+          organization: ''
           organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
+          title: Topological semantic fusion of complex graphs
           url: ''
         - certificate_url: https://www.edx.org
           date_end: ''
@@ -127,68 +124,68 @@ sections:
           url: ''
     design:
       columns: '2'
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
-  - block: portfolio
-    id: projects
-    content:
-      title: Projects
-      filters:
-        folders:
-          - project
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
-      # Filter toolbar (optional).
-      # Add or remove as many filters (`filter_button` instances) as you like.
-      # To show all items, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      view: showcase
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+  # - block: collection
+  #   id: posts
+  #   content:
+  #     title: Feature Publicaions
+  #     subtitle: ''
+  #     text: ''
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       folders:
+  #         - post
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: compact
+  #     columns: '2'
+  # - block: portfolio
+  #   id: projects
+  #   content:
+  #     title: Projects
+  #     filters:
+  #       folders:
+  #         - project
+  #     # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+  #     default_button_index: 0
+  #     # Filter toolbar (optional).
+  #     # Add or remove as many filters (`filter_button` instances) as you like.
+  #     # To show all items, set `tag` to "*".
+  #     # To filter by a specific tag, set `tag` to an existing tag name.
+  #     # To remove the toolbar, delete the entire `filter_button` block.
+  #     buttons:
+  #       - name: All
+  #         tag: '*'
+  #       - name: Deep Learning
+  #         tag: Deep Learning
+  #       - name: Other
+  #         tag: Demo
+  #   design:
+  #     # Choose how many columns the section has. Valid values: '1' or '2'.
+  #     columns: '1'
+  #     view: showcase
+  #     # For Showcase view, flip alternate rows?
+  #     flip_alt_rows: false
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
   - block: collection
     id: featured
     content:
@@ -237,24 +234,22 @@ sections:
       text: |-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      email: pjiao@hdu.edu.cn
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+        street: 2jianggan 1158
+        city: HangZHou
+        region: Qiantang
+        postcode: '310000'
+        country: Chinese
+        country_code: CN
+      directions: Hangzhou Dianzi University science hall 708
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
+        latitude: '120.349512'
+        longitude: '30.320546'  
       contact_links:
         - icon: twitter
           icon_pack: fab

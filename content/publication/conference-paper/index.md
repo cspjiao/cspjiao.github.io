@@ -1,23 +1,24 @@
 ---
-title: 'An example conference paper'
+title: 'Network-Specific Variational Auto-Encoder for Embedding in Attribute Networks.'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Di Jin
+  - Li B
 
 # Author notes (optional)
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
+date: '2019-07-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2019-10-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -28,10 +29,10 @@ publication_types: ['paper-conference']
 publication: In *Hugo Blox Builder Conference*
 publication_short: In *ICW*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Network embedding (NE) maps a network into a low-dimensional space while preserving intrinsic features of the network. Variational Auto-Encoder (VAE) has been actively studied for NE. These VAE-based methods typically utilize both network topologies and node semantics and treat these two types of data in the same way. However, the information of network topology and information of node semantics are orthogonal and are often from different sources; the former quantifies coupling relationships among nodes, whereas the latter represents node specific properties. Ignoring this difference affects NE. To address this issue, we develop a network-specific VAE for NE, named as NetVAE. In the encoding phase of our new approach, compression of network structures and compression of node attributes share the same encoder in order to perform co-training to achieve transfer learning and information integration. In the decoding phase, a dual decoder is introduced to reconstruct network topologies and node attributes separately. Specifically, as a part of the dual decoder, we develop a novel method based on a Gaussian mixture model and the block model to reconstruct network structures. Extensive experiments on large real-world networks demonstrate a superior performance of the new approach over the state-of-the-art methods.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Network embedding (NE) maps a network into a low-dimensional space while preserving intrinsic features of the network. Variational Auto-Encoder (VAE) has been actively studied for NE. These VAE-based methods typically utilize both network topologies and node semantics and treat these two types of data in the same way. However, the information of network topology and information of node semantics are orthogonal and are often from different sources; the former quantifies coupling relationships among nodes, whereas the latter represents node specific properties. Ignoring this difference affects NE. To address this issue, we develop a network-specific VAE for NE, named as NetVAE. In the encoding phase of our new approach, compression of network structures and compression of node attributes share the same encoder in order to perform co-training to achieve transfer learning and information integration. In the decoding phase, a dual decoder is introduced to reconstruct network topologies and node attributes separately. Specifically, as a part of the dual decoder, we develop a novel method based on a Gaussian mixture model and the block model to reconstruct network structures. Extensive experiments on large real-world networks demonstrate a superior performance of the new approach over the state-of-the-art methods
 
 tags: []
 
