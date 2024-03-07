@@ -1,0 +1,43 @@
+---
+title: Debiasing Graph Neural Networks via Learning Disentangled Causal Substructure
+authors:
+- Shaohua Fan
+- Xiao Wang
+- Yanhu Mo
+- Chuan Shi
+- Jian Tang
+date: '2022-09-01'
+publishDate: '2024-03-07T05:54:23.193334Z'
+publication_types:
+- manuscript
+publication: '*arXiv*'
+doi: 10.48550/arXiv.2209.14107
+abstract: 'Most Graph Neural Networks (GNNs) predict the labels of unseen graphs by
+  learning the correlation between the input graphs and labels. However, by presenting
+  a graph classification investigation on the training graphs with severe bias, surprisingly,
+  we discover that GNNs always tend to explore the spurious correlations to make decision,
+  even if the causal correlation always exists. This implies that existing GNNs trained
+  on such biased datasets will suffer from poor generalization capability. By analyzing
+  this problem in a causal view, we find that disentangling and decorrelating the
+  causal and bias latent variables from the biased graphs are both crucial for debiasing.
+  Inspiring by this, we propose a general disentangled GNN framework to learn the
+  causal substructure and bias substructure, respectively. Particularly, we design
+  a parameterized edge mask generator to explicitly split the input graph into causal
+  and bias subgraphs. Then two GNN modules supervised by causal/bias-aware loss functions
+  respectively are trained to encode causal and bias subgraphs into their corresponding
+  representations. With the disentangled representations, we synthesize the counterfactual
+  unbiased training samples to further decorrelate causal and bias variables. Moreover,
+  to better benchmark the severe bias problem, we construct three new graph datasets,
+  which have controllable bias degrees and are easier to visualize and explain. Experimental
+  results well demonstrate that our approach achieves superior generalization performance
+  over existing baselines. Furthermore, owing to the learned edge mask, the proposed
+  model has appealing interpretability and transferability. Code and data are available
+  at: https://github.com/googlebaba/DisC.'
+tags:
+- Computer Science - Machine Learning
+- Computer Science - Artificial Intelligence
+- 去偏差图神经网络
+links:
+- name: URL
+  url: http://arxiv.org/abs/2209.14107
+---
