@@ -17,7 +17,7 @@ sections:
       title: What's New
       text: |-
           + <font color=orange>**[Award]**</font> Congratulations to Liu Huan and Chen Hongjiang on successfully passing the PhD interview（01/2024）
-          + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://ieeexplore.ieee.org/abstract/document/10409567/) being accepted by tbd（01/2024）
+          + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) being accepted by tbd（01/2024）
           + <font color=orange>**[Award]**</font> Congratulations to Chen Hongqian on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
           + <font color=red>**[Paper]**</font> Congratulations to Chen Hongqian for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() being accepted by AAAI（10/2023）
           + <font color=orange>**[Award]**</font> Congratulations to Liu Huan on winning the National Scholarship（10/2023）
@@ -41,48 +41,197 @@ sections:
     design:
       columns: '2'
       view: card
-       # - block: collection
+
+
+
+  # - block: collection
   #   id: posts
-  #   content:
-  #     title: Feature Publicaions
-  #     subtitle: ''
-  #     text: ''
-  #     # Choose how many pages you would like to display (0 = all pages)
-  #     count: 5
-  #     # Filter on criteria
-  #     filters:
-  #       folders:
-  #         - post
-  #       author: ""
-  #       category: ""
-  #       tag: ""
-  #       exclude_featured: false
-  #       exclude_future: false
-  #       exclude_past: false
-  #       publication_type: ""
-  #     # Choose how many pages you would like to offset by
-  #     offset: 0
-  #     # Page order: descending (desc) or ascending (asc) date.
-  #     order: desc
-  #   design:
-  #     # Choose a layout view
-  #     view: compact
-  #     columns: '2'
+    content:
+      title: Feature Publicaions
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
+      filters:
+        folders:
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
 
   - block: collection
     content:
       title: Recent Publications
       text: |-
         {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
+        Only recent papers are shown, more on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ).
         {{% /callout %}}
       filters:
         folders:
           - publication
-        exclude_featured: true
+        exclude_featured: false
     design:
       columns: '2'
       view: citation
+
+
+  - block: markdown
+    content:
+      # title: Team
+      text: 
+         '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            padding-bottom: 50px;
+            text-align: center;
+            margin: 0 auto;
+            display: flex; /* 将 .section 设置为 Flex 容器 */
+            flex-direction: column; /* 设置主轴方向为垂直方向 */
+            align-items: center; /* 在交叉轴上居中对齐 */
+            max-width: 800px;
+        }
+        .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .team-members {
+            display: flex;
+            flex-wrap: wrap; /* 允许内容换行 */
+            justify-content: center; /* 水平居中对齐 */
+        }
+        .team-member {
+            ttext-align: center;
+            margin: 10px;
+            width: 20%; /* 固定每个子元素块的宽度为20% */
+            flex-grow: 0; /* 禁止子元素块根据可用空间伸展 */
+            flex-shrink: 0; /* 禁止子元素块根据可用空间收缩 */
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+        }
+        .name {
+            font-size: 18px;
+            color: rgb(0, 150, 231);
+            margin-bottom: 5px;
+        }
+        .position {
+            font-size: 16px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="title">Team Leader</div>
+        <div class="team-member">
+            <img src="authors/admin/avatar.jpg" alt="Pengfei Jiao">
+            <div class="name">Pengfei Jiao</div>
+            <div class="position">Team Leader</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="title">Group Teacher</div>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+                <div class="name">Mengzhou Gao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Tang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Tang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Bao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Huang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <!-- Add more group teachers as needed -->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="title">Student</div>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+         
+            <!-- Add more students as needed -->
+        </div>
+    </div>
+</body>
+</html>
+'
 
   # - block: markdown
   #   id: awards
@@ -90,8 +239,8 @@ sections:
   #     title: Awards and Grants
   #     text: |-
 
-  #   design:
-  #     columns: '2'
+    design:
+      columns: '1'
 
   - block: markdown
     id: service
@@ -222,14 +371,7 @@ sections:
     design:
       columns: '2'
  
-  # - block: markdown
-  #   content:
-  #     title: Gallery
-  #     subtitle: ''
-  #     text: |-
-  #       {{< gallery album="demo" >}}
-  #   design:
-  #     columns: '1'
+
   
   # - block: collection
   #   id: teaching
