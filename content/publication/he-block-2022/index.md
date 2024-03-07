@@ -30,6 +30,8 @@ abstract: Graph Convolutional Network (GCN) has shown remarkable potential of ex
 tags:
 - Machine Learning (ML)
 links:
-- name: URL
-  url: https://ojs.aaai.org/index.php/AAAI/article/view/20319
+- name: PDF
+  url: https://github.com/cspjiao/cspjiao.github.io/blob/main/content/publication/chen-enhancing-2023/Chen%20et%20al_2023_Enhancing%20Network%20Alignment%20through%20Multi-Scale%20Information%20Fusion.pdf
+- name: Code
+  url: ''
 ---
