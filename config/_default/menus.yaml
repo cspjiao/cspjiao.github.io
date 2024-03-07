@@ -13,9 +13,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 30
-  - name: Team
-    url: '#team'
-    weight: 40
+  # - name: Team
+  #   url: '#team'
+  #   weight: 40
   # - name: Awards
   #   url: '#awards'
   #   weight: 50

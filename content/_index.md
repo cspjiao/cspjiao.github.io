@@ -44,33 +44,6 @@ sections:
 
 
 
-  # - block: collection
-  #   id: posts
-    content:
-      title: Feature Publicaions
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
 
   - block: collection
     content:
@@ -88,173 +61,173 @@ sections:
       view: citation
 
 
-  - block: markdown
-    id: team
-    content:
-      # title: Team
-      text: 
-         '<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .section {
-            padding-bottom: 50px;
-            text-align: center;
-            margin: 0 auto;
-            display: flex; /* 将 .section 设置为 Flex 容器 */
-            flex-direction: column; /* 设置主轴方向为垂直方向 */
-            align-items: center; /* 在交叉轴上居中对齐 */
-            max-width: 800px;
-        }
-        .title {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .team-members {
-            display: flex;
-            flex-wrap: wrap; /* 允许内容换行 */
-            justify-content: center; /* 水平居中对齐 */
-            gap: 10px;
-        }
-        .team-member {
-            text-align: center;
-            margin: 10px;
-            width: calc(20% - 10px); /* 固定每个子元素块的宽度为20% */
-            flex-grow: 1; /* 禁止子元素块根据可用空间伸展 */
-            max-width: 130px; /* 设置最大宽度以保持布局美观 */
-        }
-        .team-member img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin: 0 auto;
-        }
-        .name {
-            font-size: 18px;
-            color: rgb(0, 150, 231);
-            margin-bottom: 2px;
-        }
-        .position {
-            font-size: 16px;
-            color: gray;
-        }
-    </style>
-</head>
-<body>
-    <div class="section">
-        <div class="title">Team Leader</div>
-        <div class="team-member">
-            <img src="authors/admin/avatar.jpg" alt="Pengfei Jiao">
-            <div class="name">Pengfei Jiao</div>
-            <div class="position">Team Leader</div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="title">Group Teacher</div>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
-                <div class="name">Mengzhou Gao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
-                <div class="name">Mengzhou Gao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
-                <div class="name">Mengzhou Gao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
-                <div class="name">Mengzhou Gao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
-                <div class="name">Mengzhou Gao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Tang</div>
-                <div class="position">Group Teacher</div>
-            </div>
+#   - block: markdown
+#     id: team
+#     content:
+#       # title: Team
+#       text: 
+#          '<!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <title>Team Information</title>
+#     <style>
+#         body {
+#             font-family: Arial, sans-serif;
+#             margin: 0;
+#             padding: 0;
+#         }
+#         .section {
+#             padding-bottom: 50px;
+#             text-align: center;
+#             margin: 0 auto;
+#             display: flex; /* 将 .section 设置为 Flex 容器 */
+#             flex-direction: column; /* 设置主轴方向为垂直方向 */
+#             align-items: center; /* 在交叉轴上居中对齐 */
+#             max-width: 800px;
+#         }
+#         .title {
+#             font-size: 28px;
+#             margin-bottom: 20px;
+#         }
+#         .team-members {
+#             display: flex;
+#             flex-wrap: wrap; /* 允许内容换行 */
+#             justify-content: center; /* 水平居中对齐 */
+#             gap: 10px;
+#         }
+#         .team-member {
+#             text-align: center;
+#             margin: 10px;
+#             width: calc(20% - 10px); /* 固定每个子元素块的宽度为20% */
+#             flex-grow: 1; /* 禁止子元素块根据可用空间伸展 */
+#             max-width: 130px; /* 设置最大宽度以保持布局美观 */
+#         }
+#         .team-member img {
+#             border-radius: 50%;
+#             width: 120px;
+#             height: 120px;
+#             margin: 0 auto;
+#         }
+#         .name {
+#             font-size: 18px;
+#             color: rgb(0, 150, 231);
+#             margin-bottom: 2px;
+#         }
+#         .position {
+#             font-size: 16px;
+#             color: gray;
+#         }
+#     </style>
+# </head>
+# <body>
+#     <div class="section">
+#         <div class="title">Team Leader</div>
+#         <div class="team-member">
+#             <img src="authors/admin/avatar.jpg" alt="Pengfei Jiao">
+#             <div class="name">Pengfei Jiao</div>
+#             <div class="position">Team Leader</div>
+#         </div>
+#     </div>
+#     <div class="section">
+#         <div class="title">Group Teacher</div>
+#         <div class="team-members">
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+#                 <div class="name">Mengzhou Gao</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+#                 <div class="name">Mengzhou Gao</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+#                 <div class="name">Mengzhou Gao</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+#                 <div class="name">Mengzhou Gao</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+#                 <div class="name">Mengzhou Gao</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Tang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
            
-            <!-- Add more group teachers as needed -->
-        </div>
-    </div>
+#             <!-- Add more group teachers as needed -->
+#         </div>
+#     </div>
 
-    <div class="section">
-        <div class="title">Student</div>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-             <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-             <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-             <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-             <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhang</div>
-                <div class="position">Group Teacher</div>
-            </div>
+#     <div class="section">
+#         <div class="title">Student</div>
+#         <div class="team-members">
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#              <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#              <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#              <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#              <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
+#             <div class="team-member">
+#                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+#                 <div class="name">Teacher Zhang</div>
+#                 <div class="position">Group Teacher</div>
+#             </div>
          
-            <!-- Add more students as needed -->
-        </div>
-    </div>
-</body>
-</html>
-'
+#             <!-- Add more students as needed -->
+#         </div>
+#     </div>
+# </body>
+# </html>
+# '
 
   # - block: markdown
   #   id: awards
@@ -262,8 +235,8 @@ sections:
   #     title: Awards and Grants
   #     text: |-
 
-    design:
-      columns: '1'
+    # design:
+    #   columns: '1'
 
   - block: markdown
     id: service
