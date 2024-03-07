@@ -89,6 +89,7 @@ sections:
 
 
   - block: markdown
+    id: team
     content:
       # title: Team
       text: 
@@ -139,7 +140,7 @@ sections:
         .name {
             font-size: 18px;
             color: rgb(0, 150, 231);
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
         .position {
             font-size: 16px;
