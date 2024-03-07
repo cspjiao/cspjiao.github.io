@@ -121,18 +121,19 @@ sections:
             display: flex;
             flex-wrap: wrap; /* 允许内容换行 */
             justify-content: center; /* 水平居中对齐 */
+            gap: 10px;
         }
         .team-member {
-            ttext-align: center;
+            text-align: center;
             margin: 10px;
-            width: 20%; /* 固定每个子元素块的宽度为20% */
-            flex-grow: 0; /* 禁止子元素块根据可用空间伸展 */
-            flex-shrink: 0; /* 禁止子元素块根据可用空间收缩 */
+            width: calc(20% - 10px); /* 固定每个子元素块的宽度为20% */
+            flex-grow: 1; /* 禁止子元素块根据可用空间伸展 */
+            max-width: 130px; /* 设置最大宽度以保持布局美观 */
         }
         .team-member img {
             border-radius: 50%;
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             margin: 0 auto;
         }
         .name {
@@ -164,8 +165,18 @@ sections:
                 <div class="position">Group Teacher</div>
             </div>
             <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Tang</div>
+                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+                <div class="name">Mengzhou Gao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+                <div class="name">Mengzhou Gao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
+                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+                <div class="name">Mengzhou Gao</div>
                 <div class="position">Group Teacher</div>
             </div>
             <div class="team-member">
@@ -173,21 +184,7 @@ sections:
                 <div class="name">Teacher Tang</div>
                 <div class="position">Group Teacher</div>
             </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Bao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Zhao</div>
-                <div class="position">Group Teacher</div>
-            </div>
-            <div class="team-member">
-                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
-                <div class="name">Teacher Huang</div>
-                <div class="position">Group Teacher</div>
-            </div>
+           
             <!-- Add more group teachers as needed -->
         </div>
     </div>
@@ -216,6 +213,26 @@ sections:
                 <div class="position">Group Teacher</div>
             </div>
             <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+             <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+             <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+             <div class="team-member">
+                <img src="authors/avatar.jpg"" alt="Group Teacher 2">
+                <div class="name">Teacher Zhang</div>
+                <div class="position">Group Teacher</div>
+            </div>
+             <div class="team-member">
                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
                 <div class="name">Teacher Zhang</div>
                 <div class="position">Group Teacher</div>
