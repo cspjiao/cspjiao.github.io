@@ -181,6 +181,11 @@ sections:
                 <div class="position">Group Teacher</div>
             </div>
             <div class="team-member">
+                <img src="authors/avatar.jpg" alt="Mengzhou Gao">
+                <div class="name">Mengzhou Gao</div>
+                <div class="position">Group Teacher</div>
+            </div>
+            <div class="team-member">
                 <img src="authors/avatar.jpg"" alt="Group Teacher 2">
                 <div class="name">Teacher Tang</div>
                 <div class="position">Group Teacher</div>
