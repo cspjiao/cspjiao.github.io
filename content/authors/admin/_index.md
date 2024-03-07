@@ -7,7 +7,7 @@ title: Pengfei Jiao (焦鹏飞)
 superuser: true
 
 # Role/position
-role: 'Distinguished Professor'
+role: 'Professor'
 
 # Status emoji
 #status: 
@@ -22,10 +22,10 @@ organizations:
 bio: ''
 
 interests:
-  - Graph neural network
-  - Multiple topological semantic information
-  - Variety of structural link modes
-  - Variable time evolution behavior
+  - complex networks
+  - graph machine learning
+  - data mining
+  - cybersecurity
 
 
 education:
@@ -51,12 +51,15 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/cspjiao
+  - icon: archive
+    icon_pack: ai
+    link: https://cbs.hdu.edu.cn/2023/1122/c2588a253498/page.htm
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ
-  - icon: acm
+  - icon: ieee
     icon_pack: ai
-    link: https://dl.acm.org/doi/abs/10.1145/3331184.3331371
+    link: https://ieeexplore.ieee.org/author/37085893126
 
 # Uncomment below for Github link
 #- icon: github
@@ -72,8 +75,7 @@ social:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
 ---
-Pengfei Jiao has long been engaged in research in the field of graph machine learning, which, as the academic frontier of complex network science and artificial intelligence, is the core of major national strategies such as cyberspace security and data security, and has demonstrated outstanding value in scenarios such as online fraud identification, financial risk assessment and recommendation systems. However, the graph data in the real scene is faced with the complexity of multiple nodes, heterogeneous links and time changes.
-However, the graph data in the real scene is faced with the complexity of multiple nodes, heterogeneous links and time changes. Therefore, the applicant faces the problem of representation learning of complex graphs, focusing on 
-1. the diversity of topological semantic information in complex graphs;
-2. Various structural link modes; 
-3. Key challenges such as time evolution and changing behavior.
+Pengfei Jiao, a professor and doctoral supervisor at the college of Cybersecurity, Hangzhou Dianzi University. 
+He is engaged in research in network science and data intelligence, with specific research directions including complex networks, graph machine learning, data mining, and cybersecurity. He has published over 40 high-level journal and conference papers as first author and corresponding author, including in journals and conferences such as the Journal of Computer Science and Technology, Journal of Computer Research and Development, Chinese Journal of Information, TKDE, TNNLS, TCYB, TBD, TCSS, AAAI, IJCAI, WWW, SIGIR, ICDM, and CIKM. Among these, there are more than 30 papers indexed by CCF-A and SCI-E. 
+He was awarded the Outstanding Paper Award at the CCF-recommended conference NLPCC2019. His publications have been cited more than 1600 times according to Google Scholar, and over 700 times according to Web of Science (SCI), with an H-index of 21 and an H10-index of 36. 
+He serves as a reviewer for several top international journals. He has been the principal investigator for projects funded by the National Natural Science Foundation of China (NSFC), including general and youth projects, projects under the National Key Research and Development Program, and major projects funded by the Zhejiang Provincial Natural Science Foundation.

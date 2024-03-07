@@ -36,11 +36,7 @@ tags:
 - node embedding
 - Task analysis
 featured: true
-links:
-- name: PDF
-  url: https://github.com/cspjiao/cspjiao.github.io/blob/main/content/publication/chen-enhancing-2023/Chen%20et%20al_2023_Enhancing%20Network%20Alignment%20through%20Multi-Scale%20Information%20Fusion.pdf
-- name: Code
-  url: ''
+
   
 image:
   placement: 1

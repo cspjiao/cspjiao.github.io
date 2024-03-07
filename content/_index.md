@@ -29,21 +29,18 @@ sections:
     design:
       columns: '2'
 
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      count: 2
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-
-
-
+  # - block: collection
+  #   id: featured
+  #   content:
+  #     title: Featured Publications
+  #     count: 2
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     columns: '2'
+  #     view: card
 
   - block: collection
     content:
@@ -60,6 +57,16 @@ sections:
       columns: '2'
       view: citation
 
+  - block: markdown
+    id: teaching
+    content:
+      title: Teaching
+      text: |-
+          +  Spring 2024 : Artificial Intelligence and machine learning <font color=gray>[undergraduate students]</font>
+          +  Spring 2024 : Fundamentals and Frontiers of network science <font color=gray>[graduated students]</font>
+         
+    design:
+      columns: '2'
 
 #   - block: markdown
 #     id: team
@@ -367,31 +374,20 @@ sections:
     design:
       columns: '2'
  
-
   
-  # - block: collection
-  #   id: teaching
-  #   content:
-  #     title: Teaching
-  #     filters:
-  #       folders:
-  #         - event
-  #   design:
-  #     columns: '2'
-  #     view: compact
+
   - block: contact
     id: contact
     content:
       title: Contact
       subtitle:
-      text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+      
       # Contact (add or remove contact options as necessary)
       email: pjiao@hdu.edu.cn
       address:
-        street: No. 280-300 Xuelin Street
+        street: 1158, No.2 Street, Baiyang Street, 
         city: HangZhou
-        region: Qiantang District
+        region: Hangzhou Economic and Technological Development Zone
         postcode: '310018'
         country: Chinese
         country_code: CN
@@ -406,13 +402,13 @@ sections:
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+      # form:
+      #   provider: netlify
+      #   formspree:
+      #     id:
+      #   netlify:
+      #     # Enable CAPTCHA challenge to reduce spam?
+      #     captcha: false
     design:
       columns: '2'
 ---

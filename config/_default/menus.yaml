@@ -13,6 +13,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 30
+  - name: Teaching
+    url: '#teaching'
+    weight: 40
   # - name: Team
   #   url: '#team'
   #   weight: 40
@@ -28,9 +31,6 @@ main:
   - name: Accomplishments
     url: '#accomplishments'
     weight: 80
-  # - name: Teaching
-  #   url: '#teaching'
-  #   weight: 90
   - name: Contact
     url: '#contact'
     weight: 100
