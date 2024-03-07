@@ -26,6 +26,9 @@ abstract: Temporal graph representation learning aims to generate low-dimensiona
   augmentation strategies that modify topological features to reduce noise from the
   network. Our extensive experiments on various real networks demonstrate that the
   proposed model outperforms other temporal graph representation learning methods.
+featured: true
+url_code: ''
+url_pdf: ''
 tags:
 - Contrastive learning
 - Network embedding

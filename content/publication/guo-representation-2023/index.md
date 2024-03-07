@@ -44,6 +44,6 @@ tags:
 - Topology
 - unsupervised learning
 links:
-- name: URL
+- name: PDF
   url: https://ieeexplore.ieee.org/abstract/document/10013087
 ---

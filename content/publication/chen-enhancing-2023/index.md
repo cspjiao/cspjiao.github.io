@@ -34,7 +34,11 @@ tags:
 - network alignment
 - node embedding
 - Task analysis
+featured: true
 links:
-- name: URL
+- name: PDF
   url: https://ieeexplore.ieee.org/abstract/document/10412749
+- name: Code
+  url: ''
+  
 ---
