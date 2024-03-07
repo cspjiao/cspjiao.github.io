@@ -52,10 +52,10 @@ social:
     icon_pack: fab
     link: https://github.com/cspjiao
   - icon: google-scholar
-    icon_pack: fab
+    icon_pack: ai
     link: https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ
   - icon: acm
-    icon_pack: fab
+    icon_pack: ai
     link: https://dl.acm.org/doi/abs/10.1145/3331184.3331371
 
 # Uncomment below for Github link
