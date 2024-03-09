@@ -28,9 +28,9 @@ main:
   - name: Experience
     url: '#experience'
     weight: 70
-  - name: Accomplishments
-    url: '#accomplishments'
-    weight: 80
+  # - name: Accomplishments
+  #   url: '#accomplishments'
+  #   weight: 80
   - name: Contact
     url: '#contact'
     weight: 100
