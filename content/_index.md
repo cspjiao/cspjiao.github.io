@@ -16,14 +16,18 @@ sections:
     content:
       title: What's New
       text: |-
-          + <font color=orange>**[Award]**</font> Congratulations to Liu Huan and Chen Hongjiang on successfully passing the PhD interview（01/2024）
-          + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) being accepted by tbd（01/2024）
-          + <font color=orange>**[Award]**</font> Congratulations to Chen Hongqian on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
-          + <font color=red>**[Paper]**</font> Congratulations to Chen Hongqian for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() being accepted by AAAI（10/2023）
-          + <font color=orange>**[Award]**</font> Congratulations to Liu Huan on winning the National Scholarship（10/2023）
-          + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) being accepted by kbs（10/2023）
-          + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) being accepted by ecml（09/2023）
-          + <font color=blue>（Ongoing update...)</font>
+            + <font color=blue>（Ongoing update...)</font>
+            + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Chen Hongjiang on successfully passing the PhD interview（01/2024）
+            + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) being accepted by tbd（01/2024）
+            + <font color=orange>**[Award]**</font> Congratulations to Hongqian Chen on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
+            + <font color=red>**[Paper]**</font> Congratulations to  Hongqian Chen for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() being accepted by AAAI（10/2023）
+            + <font color=orange>**[Award]**</font> Congratulations to Huan Liu on winning the National Scholarship（10/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) being accepted by kbs（10/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) being accepted by ecml（09/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Zhihao Chen for his article ["Enhancing Network Alignment through Multi-Scale Information Fusion"](https://ieeexplore.ieee.org/abstract/document/10412749/) being accepted by ICKG（09/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Huan Liu for his article ["Globally Enhanced Heterogeneous Temporal Graph Neural Networks Based on Contrastive Learning"](https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2023&filename=JFYZ202308017&uniplatform=OVERSEA&v=oI2GAKN1zdQCikEIR5ya_hbbPxPygrFNnPyfSID4f9Vut344MI0WZSdfone_md-X) being accepted by [Journal of Computer Research and Development](https://www.cnki.net/kns/Navi?DBCode=CJFD&BaseID=JFYZ)（08/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Neighborhood overlap-aware heterogeneous hypergraph neural network for link prediction"](https://www.sciencedirect.com/science/article/abs/pii/S0031320323005162) being accepted by Pattern Recognition（07/2023）
+            + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Heterogeneous Link prediction via MutualInformation Maximization between Node Pairs"](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_37) being accepted by CICAI（07/2023）
          
       
     design:
@@ -43,6 +47,7 @@ sections:
   #     view: card
 
   - block: collection
+    id: publications
     content:
       title: Recent Publications
       text: |-
