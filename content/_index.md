@@ -16,18 +16,18 @@ sections:
     content:
       title: What's New
       text: |-
-            + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to ICDE 2024（03/2024)
-            + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Chen Hongjiang on successfully passing the PhD interview（01/2024）
-            + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to tbd（01/2024）
-            + <font color=orange>**[Award]**</font> Congratulations to Hongqian Chen on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
-            + <font color=red>**[Paper]**</font> Congratulations to  Hongqian Chen for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() has benn accpetd to AAAI（10/2023）
-            + <font color=orange>**[Award]**</font> Congratulations to Huan Liu on winning the National Scholarship（10/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) has benn accpetd to kbs（10/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) has benn accpetd to ecml（09/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Zhihao Chen for his article ["Enhancing Network Alignment through Multi-Scale Information Fusion"](https://ieeexplore.ieee.org/abstract/document/10412749/) has benn accpetd to ICKG（09/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Huan Liu for his article ["Globally Enhanced Heterogeneous Temporal Graph Neural Networks Based on Contrastive Learning"](https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2023&filename=JFYZ202308017&uniplatform=OVERSEA&v=oI2GAKN1zdQCikEIR5ya_hbbPxPygrFNnPyfSID4f9Vut344MI0WZSdfone_md-X) has benn accpetd to [Journal of Computer Research and Development](https://www.cnki.net/kns/Navi?DBCode=CJFD&BaseID=JFYZ)（08/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Neighborhood overlap-aware heterogeneous hypergraph neural network for link prediction"](https://www.sciencedirect.com/science/article/abs/pii/S0031320323005162) has benn accpetd to Pattern Recognition（07/2023）
-            + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Heterogeneous Link prediction via MutualInformation Maximization between Node Pairs"](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_37) has benn accpetd to CICAI（07/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to ICDE 2024（03/2024)
+                + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Hongjiang Chen on successfully passing the PhD interview（01/2024）
+                + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to tbd（01/2024）
+                + <font color=orange>**[Award]**</font> Congratulations to Hongqian Chen on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
+                + <font color=red>**[Paper]**</font> Congratulations to  Hongqian Chen for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() has benn accpetd to AAAI（10/2023）
+                + <font color=orange>**[Award]**</font> Congratulations to Huan Liu on winning the National Scholarship（10/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) has benn accpetd to kbs（10/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) has benn accpetd to ecml（09/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Zhihao Chen for his article ["Enhancing Network Alignment through Multi-Scale Information Fusion"](https://ieeexplore.ieee.org/abstract/document/10412749/) has benn accpetd to ICKG（09/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Huan Liu for his article ["Globally Enhanced Heterogeneous Temporal Graph Neural Networks Based on Contrastive Learning"](https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2023&filename=JFYZ202308017&uniplatform=OVERSEA&v=oI2GAKN1zdQCikEIR5ya_hbbPxPygrFNnPyfSID4f9Vut344MI0WZSdfone_md-X) has benn accpetd to [Journal of Computer Research and Development](https://www.cnki.net/kns/Navi?DBCode=CJFD&BaseID=JFYZ)（08/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Neighborhood overlap-aware heterogeneous hypergraph neural network for link prediction"](https://www.sciencedirect.com/science/article/abs/pii/S0031320323005162) has benn accpetd to Pattern Recognition（07/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Heterogeneous Link prediction via MutualInformation Maximization between Node Pairs"](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_37) has benn accpetd to CICAI（07/2023）
          
       
     design:
@@ -52,7 +52,7 @@ sections:
       title: Recent Publications
       text: |-
         {{% callout note %}}
-        Only recent papers are shown, more on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ).
+        More on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ).
         {{% /callout %}}
       filters:
         folders:
@@ -255,30 +255,15 @@ sections:
     content:
       title: Professional Services
       text: |-
-          ### Hosting and participating in projects
-            + Research on interpretable deep generation models and algorithms for dynamic complex networks
-            + Research on community detection and evolution of large-scale dynamic complex networks driven by node roles
-            + Research on cross-modal semantic understanding and knowledge reasoning under brain-like characteristics
-            + Research on intelligent auxiliary technology of administrative law enforcement based on graph mining
-            + Research on basic theory and key algorithm of cross-modal intelligent computing
-            + Knowledge representation and computation for multimodal information networks
-            + XXXXX Measurement system
-            + Research on the hierarchical linkage mechanical modeling of multi-scale information propagation in cyberspace
-            + Research on large-scale network community discovery based on Markov random fields
-            + Research on accurate semantic community discovery for large-scale and complex networks
-            + Urban transmission and prediction models of highly infectious diseases Construction method
-            + Specific human-event correlation open source clue mining and "people in the loop" visual research and judgment platform
-            + The key technology of role identification in large-scale covert complex network
-            + Network event detection
   
            ###   Program Committee
-            + AAAI Conference on Artificial Intelligence（AAAI-21-23）
-            + International Joint Conference on Artificial Intelligence（IJCAI-24）
-            + Association for Computational Linguistics（ACL-22-23）
-            +  IEEE International Conference on Data Mining （ICDM-22）
-            + ACM Multimedia Conference（MM-23）
-            + The Web Conference（WWW-23-24）
-            + European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases（ECMLPKDD-23）
+            + AAAI Conference on Artificial Intelligence
+            + International Joint Conference on Artificial Intelligence
+            + Association for Computational Linguistics
+            +  IEEE International Conference on Data Mining 
+            + ACM Multimedia Conference
+            + The Web Conference
+            + European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases
 
            ### Journal Reviewer
 
@@ -301,43 +286,58 @@ sections:
       columns: '2'
 
 
-  - block: experience
-    id: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: lecturer
-          company: Tianjing University
-          company_url: ''
-          company_logo: ''
-          location: Chinese
-          date_start: '2018-09-01'
-          date_end: '2021-11-01'
-          description: Taught computer science.
-        - title: Distinguished Professor
-          company: Hangzhou Dianzi University
-          company_url: ''
-          company_logo: ''
-          location: Chinese
-          date_start: '2021-12-01'
-          date_end: ''
-          description: |2-
-              Research include:
+  # - block: experience
+  #   id: experience
+  #   content:
+  #     title: Experience
+  #     # Date format for experience
+  #     #   Refer to https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Experiences.
+  #     #   Add/remove as many `experience` items below as you like.
+  #     #   Required fields are `title`, `company`, and `date_start`.
+  #     #   Leave `date_end` empty if it's your current employer.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - title: lecturer
+  #         company: Tianjing University
+  #         company_url: ''
+  #         company_logo: ''
+  #         location: Chinese
+  #         date_start: '2018-09-01'
+  #         date_end: '2021-11-01'
+  #         description: Taught computer science.
+  #       - title: Distinguished Professor
+  #         company: Hangzhou Dianzi University
+  #         company_url: ''
+  #         company_logo: ''
+  #         location: Chinese
+  #         date_start: '2021-12-01'
+  #         date_end: ''
+  #         description: |2-
+  #             Research include:
 
-              * Graph neural
-              * Time series
-              * Representation learning
+  #             * Graph neural
+  #             * Time series
+  #             * Representation learning
+  # ### Hosting and participating in projects
+  #           + Research on interpretable deep generation models and algorithms for dynamic complex networks
+  #           + Research on community detection and evolution of large-scale dynamic complex networks driven by node roles
+  #           + Research on cross-modal semantic understanding and knowledge reasoning under brain-like characteristics
+  #           + Research on intelligent auxiliary technology of administrative law enforcement based on graph mining
+  #           + Research on basic theory and key algorithm of cross-modal intelligent computing
+  #           + Knowledge representation and computation for multimodal information networks
+  #           + XXXXX Measurement system
+  #           + Research on the hierarchical linkage mechanical modeling of multi-scale information propagation in cyberspace
+  #           + Research on large-scale network community discovery based on Markov random fields
+  #           + Research on accurate semantic community discovery for large-scale and complex networks
+  #           + Urban transmission and prediction models of highly infectious diseases Construction method
+  #           + Specific human-event correlation open source clue mining and "people in the loop" visual research and judgment platform
+  #           + The key technology of role identification in large-scale covert complex network
+  #           + Network event detection
 
-    design:
-      columns: '2'
+  #   design:
+  #     columns: '2'
   # - block: accomplishments
   #   id: accomplishments
   #   content:

@@ -71,6 +71,7 @@ social:
 # - icon: cv
 #   icon_pack: ai
 #   link: files/cv.pdf
+# <img align="right" style="display: block; margin: 3pt auto" width="100" height="100" src="https://img.shields.io/badge/1820-orange?logo=googlescholar&label=Citations&link=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Dzh-CN%26user%3DHaNhbi4AAAAJ">
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
@@ -80,6 +81,6 @@ Pengfei Jiao, a professor and doctoral supervisor at the college of Cybersecurit
 He has published over 40 high-level journal and conference papers as first author and corresponding author, including in journals and conferences such as the Journal of Computer Science and Technology, Journal of Computer Research and Development, Chinese Journal of Information, TKDE, TNNLS, TCYB, TBD, TCSS, AAAI, IJCAI, WWW, SIGIR, ICDM, and CIKM. Among these, there are more than 30 papers indexed by CCF-A and SCI-E. 
 
 He was awarded the Outstanding Paper Award at the CCF-recommended conference [NLPCC2019](http://tcci.ccf.org.cn/conference/2019/cfpsw.php). 
-His publications have been cited [1820 times](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ)（on March 7, 2024） according to [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ) <img align="right" style="display: block; margin: 3pt auto" width="100" height="100" src="https://img.shields.io/badge/1820-orange?logo=googlescholar&label=Citations&link=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Dzh-CN%26user%3DHaNhbi4AAAAJ">, and over 700 times according to Web of Science (SCI), with an H-index of 21 and an H10-index of 36. 
+His publications have been cited [1822 times](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ)（on March 11, 2024） according to [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ) , and over 700 times according to Web of Science (SCI), with an H-index of 21 and an H10-index of 36. 
 
 He serves as a reviewer for several top international journals. He has been the principal investigator for projects funded by the National Natural Science Foundation of China (NSFC), including general and youth projects, projects under the National Key Research and Development Program, and major projects funded by the Zhejiang Provincial Natural Science Foundation.
