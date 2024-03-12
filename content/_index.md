@@ -62,16 +62,16 @@ sections:
       columns: '2'
       view: citation
 
-  - block: markdown
-    id: teaching
-    content:
-      title: Teaching
-      text: |-
-          +  Spring 2024 : Artificial Intelligence and machine learning <font color=gray>[undergraduate students]</font>
-          +  Spring 2024 : Fundamentals and Frontiers of network science <font color=gray>[graduated students]</font>
+  # - block: markdown
+  #   id: teaching
+  #   content:
+  #     title: Teaching
+  #     text: |-
+  #         +  Spring 2024 : Artificial Intelligence and machine learning <font color=gray>[undergraduate students]</font>
+  #         +  Spring 2024 : Fundamentals and Frontiers of network science <font color=gray>[graduated students]</font>
          
-    design:
-      columns: '2'
+  #   design:
+  #     columns: '2'
 
 #   - block: markdown
 #     id: team
