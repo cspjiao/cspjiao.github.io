@@ -50,7 +50,7 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Select Publications
+      title: Selected Publications
       count: 10
       text: |-
         {{% callout note %}}
