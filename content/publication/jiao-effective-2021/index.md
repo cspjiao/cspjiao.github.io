@@ -3,7 +3,7 @@ title: An Effective and Robust Framework by Modeling Correlations of Multiplex N
   Embedding
 featured: true
 authors:
-- jiaopenfei_en
+- jiaopengfei_en
 - Ruili Lu
 - Di Jin
 - Yinghui Wang
