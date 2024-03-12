@@ -398,10 +398,7 @@ sections:
         postcode: '310018'
         country: Chinese
         country_code: CN
-      directions: Hangzhou Dianzi University science hall 708
-      office_hours:
-        - 'Saturday 9:00 to 21:00'
-        - 'Sunday &nbsp;&nbsp;&nbsp;9:00 to 21:00'
+      directions: Hangzhou Dianzi University Science Hall 708
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
         latitude: '120.349512'
