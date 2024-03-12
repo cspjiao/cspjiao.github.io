@@ -49,7 +49,8 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Recent Publications
+      title: Select Publications
+      count: 10
       text: |-
         {{% callout note %}}
         More on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ).
@@ -57,6 +58,7 @@ sections:
       filters:
         folders:
           - publication
+        featured_only: false
         exclude_featured: false
     design:
       columns: '2'
