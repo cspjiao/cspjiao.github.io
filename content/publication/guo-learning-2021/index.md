@@ -1,11 +1,12 @@
 ---
 title: Learning Stochastic Equivalence based on Discrete Ricci Curvature
+featured: true
 authors:
 - Xuan Guo
 - Tian Qiang
 - Wang Zhang
 - Wenjun Wang
-- jiaopengfei_en
+- jiaopengfei_*
 date: '2021-08-01'
 publishDate: '2024-03-12T01:17:25.029452Z'
 publication_types:

@@ -1,9 +1,10 @@
 ---
 title: Fine-tuned Personality Federated Learning for Graph Data
+featured: true
 authors:
 - Meiting Xue
 - Zian Zhou
-- jiaopengfei_en
+- jiaopengfei_*
 - Huijun Tang
 date: '2024-01-01'
 publishDate: '2024-03-11T08:57:55.330620Z'

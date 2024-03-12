@@ -1,9 +1,10 @@
 ---
 title: 'HGN2T: A Simple but Plug-and-Play Framework Extending HGNNs on Heterogeneous
   Temporal Graphs'
+featured: true
 authors:
 - Huan Liu
-- jiaopengfei_en
+- jiaopengfei_*
 - Xuan Guo
 - Huaming Wu
 - Mengzhou Gao

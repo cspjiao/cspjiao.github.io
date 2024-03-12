@@ -1,10 +1,11 @@
 ---
 title: Self-Guided Community Detection on Networks with Missing Edges
+featured: true
 authors:
 - Dongxiao He
 - Shuai Li
 - Di Jin
-- Pengfei Jiao
+- jiaopengfei_*
 - Yuxiao Huang
 date: '2021-08-01'
 publishDate: '2024-03-12T06:53:33.047419Z'

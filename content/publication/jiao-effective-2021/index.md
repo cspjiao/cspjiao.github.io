@@ -1,8 +1,9 @@
 ---
 title: An Effective and Robust Framework by Modeling Correlations of Multiplex Network
   Embedding
+featured: true
 authors:
-- Pengfei Jiao
+- jiaopenfei_en
 - Ruili Lu
 - Di Jin
 - Yinghui Wang

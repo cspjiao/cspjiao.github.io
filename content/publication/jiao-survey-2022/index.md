@@ -1,5 +1,6 @@
 ---
 title: A Survey on Role-Oriented Network Embedding
+featured: true
 authors:
 - jiaopengfei_en
 - Xuan Guo
