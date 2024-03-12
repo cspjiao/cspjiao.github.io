@@ -1,0 +1,37 @@
+---
+title: Hybrid-order Stochastic Block Model
+authors:
+- Xunxun Wu
+- Chang-Dong Wang
+- Pengfei Jiao
+date: '2021-05-01'
+publishDate: '2024-03-12T01:17:25.021784Z'
+publication_types:
+- article-journal
+publication: '*Proceedings of the AAAI Conference on Artificial Intelligence*'
+doi: 10.1609/aaai.v35i5.16574
+abstract: Community detection is a research hotspot in machine learning and data mining.
+  However, most of the existing community detection methods only rely on the lower-order
+  connectivity patterns, while ignoring the higher-order connectivity patterns, and
+  unable to capture the building blocks of the complex network. In recent years, some
+  community detection methods based on higher-order structures have been developed,
+  but they mainly focus on the motif network composed of higher-order structures,
+  which violate the original lower-order topological structure and are affected by
+  the fragmentation issue, resulting in the deviation of community detection results.
+  Therefore, there is still a lack of community detection methods that can effectively
+  utilize higher-order connectivity patterns and lower-order connectivity patterns.
+  To overcome the above limitations, this paper proposes the Hybrid-order Stochastic
+  Block Model (HSBM) from the perspective of the generative model. Based on the classical
+  stochastic block model, the generation of lower-order structure and higher-order
+  structure of the network is modeled uniformly, and the original topological properties
+  of the network are maintained while using higher-order connectivity patterns. At
+  the same time, a heuristic algorithm for community detection is proposed to optimize
+  the objective function. Extensive experiments on six real-world datasets show that
+  the proposed method outperforms the existing approaches.
+tags:
+- Graph Mining
+- Social Network Analysis & Community
+links:
+- name: URL
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/16574
+---
