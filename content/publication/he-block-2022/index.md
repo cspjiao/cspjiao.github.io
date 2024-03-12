@@ -6,7 +6,7 @@ authors:
 - Huixin Liu
 - Mingxiang Wen
 - jiaopengfei_*
-- '*Zhiyong Feng'
+- 'Zhiyong Feng*'
 date: '2022-06-01'
 featured: true
 publishDate: '2024-03-11T08:57:55.381594Z'

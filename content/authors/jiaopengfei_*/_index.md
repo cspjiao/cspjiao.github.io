@@ -1,6 +1,6 @@
 ---
 # Display name
-title: '*Pengfei Jiao'
+title: 'Pengfei Jiao*'
 
 
 # Is this the primary user of the site?

@@ -6,7 +6,7 @@ authors:
 - Zhizhi Yu
 - jiaopengfei_*
 - Shirui Pan
-- '*Dongxiao He'
+- 'Dongxiao He*'
 - Jia Wu
 - Philip S. Yu
 - Weixiong Zhang
