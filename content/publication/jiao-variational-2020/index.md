@@ -2,7 +2,7 @@
 title: Variational autoencoder based bipartite network embedding by integrating local
   and global structure
 authors:
-- admin
+- jiaopengfei_en
 - Minghu Tang
 - Hongtao Liu
 - Yaping Wang

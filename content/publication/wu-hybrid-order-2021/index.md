@@ -3,7 +3,7 @@ title: Hybrid-order Stochastic Block Model
 authors:
 - Xunxun Wu
 - Chang-Dong Wang
-- admin
+- jiaopengfei_en
 date: '2021-05-01'
 publishDate: '2024-03-12T01:17:25.021784Z'
 publication_types:

@@ -1,7 +1,7 @@
 ---
 title: 角色导向的网络表示学习综述
 authors:
-- admin
+- jiaopengfei_cn
 - ' 潘婷'
 - ' 金弟'
 - ' 王文俊'

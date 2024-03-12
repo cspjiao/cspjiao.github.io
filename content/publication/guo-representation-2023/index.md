@@ -2,7 +2,7 @@
 title: Representation Learning on Heterostructures via Heterogeneous Anonymous Walks
 authors:
 - Xuan Guo
-- admin
+- jiaopengfei_en
 - Wang Zhang
 - Ting Pan
 - Mengyu Jia

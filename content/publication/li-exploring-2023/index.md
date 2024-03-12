@@ -3,7 +3,7 @@ title: Exploring Temporal Community Structure via Network Embedding
 authors:
 - Tianpeng Li
 - Wenjun Wang
-- admin
+- jiaopengfei_en
 - Yinghui Wang
 - Ruomeng Ding
 - Huaming Wu

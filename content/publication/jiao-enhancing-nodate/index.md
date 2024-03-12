@@ -2,13 +2,14 @@
 title: Enhancing Multi-Scale Diffusion Prediction via Sequential Hypergraphs and Adversarial
   Learning
 authors:
-- admin
+- jiaopengfei_en
 - Hongqian Chen
 - Wang Zhang
 - Huaming Wu
 date: -01-01
 featured: true
 publishDate: '2024-03-12T04:12:18.393340Z'
+publication: '*AAAI2024*'
 publication_types:
 - article-journal
 abstract: Information diffusion prediction plays a crucial role in understanding the
@@ -28,5 +29,4 @@ abstract: Information diffusion prediction plays a crucial role in understanding
   four datasets demonstrate that our model significantly outperforms state-of-the-art
   methods.
 tags:
-- ⛔ No DOI found
 ---

@@ -4,9 +4,9 @@ title: 'A Survey of Community Detection Approaches: From Statistical Modeling to
 authors:
 - Di Jin
 - Zhizhi Yu
-- admin
+- jiaopengfei_*
 - Shirui Pan
-- Dongxiao He
+- '*Dongxiao He'
 - Jia Wu
 - Philip S. Yu
 - Weixiong Zhang

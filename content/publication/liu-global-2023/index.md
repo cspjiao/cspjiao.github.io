@@ -2,7 +2,7 @@
 title: 基于对比学习的全局增强动态异质图神经网络
 featured: true
 authors:
-- admin
+- jiaopengfei_cn
 - ' 刘欢'
 - ' 吕乐'
 - ' 高梦州'
