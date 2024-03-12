@@ -20,7 +20,6 @@ sections:
                 + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to TIFS 2024（03/2024)
                 + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Hongjiang Chen on successfully passing the PhD interview（01/2024）
                 + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to tbd（01/2024）
-                + <font color=orange>**[Award]**</font> Congratulations to Hongqian Chen on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
                 + <font color=red>**[Paper]**</font> Congratulations to  Hongqian Chen for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() has benn accpetd to AAAI（10/2023）
                 + <font color=orange>**[Award]**</font> Congratulations to Huan Liu on winning the National Scholarship（10/2023）
                 + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) has benn accpetd to kbs（10/2023）
