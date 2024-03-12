@@ -19,15 +19,13 @@ sections:
                 + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to TIFS（03/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Xinxun Zhang for his article ["VGGM: Variational Graph Gaussian Mixture Model for Unsupervised Change Point Detection in Dynamic Networks"]() has been accepted to ICDE（03/2024)
                 + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Hongjiang Chen on successfully passing the PhD interview（01/2024）
-                + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to tbd（01/2024）
+                + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to TBD（01/2024）
                 + <font color=red>**[Paper]**</font> Congratulations to  Hongqian Chen for her article ["Enhancing Multi-scale Diffusion Prediction via Sequential Hypergraphs and Adversarial Learning"]() has benn accpetd to AAAI（10/2023）
                 + <font color=orange>**[Award]**</font> Congratulations to Huan Liu on winning the National Scholarship（10/2023）
-                + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) has benn accpetd to kbs（10/2023）
-                + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) has benn accpetd to ecml（09/2023）
-                + <font color=red>**[Paper]**</font>  Congratulations to Zhihao Chen for his article ["Enhancing Network Alignment through Multi-Scale Information Fusion"](https://ieeexplore.ieee.org/abstract/document/10412749/) has benn accpetd to ICKG（09/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Ming Du for his article ["Role-oriented representation learning via fusioning local and higher-order feature"](https://www.sciencedirect.com/science/article/pii/S0950705123008651) has benn accpetd to KBS（10/2023）
+                + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Temporal Graph Representation Learning with Adaptive Augmentation Contrastive"](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40) has benn accpetd to ECML（09/2023）
                 + <font color=red>**[Paper]**</font>  Congratulations to Huan Liu for his article ["Globally Enhanced Heterogeneous Temporal Graph Neural Networks Based on Contrastive Learning"](https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2023&filename=JFYZ202308017&uniplatform=OVERSEA&v=oI2GAKN1zdQCikEIR5ya_hbbPxPygrFNnPyfSID4f9Vut344MI0WZSdfone_md-X) has benn accpetd to [Journal of Computer Research and Development](https://www.cnki.net/kns/Navi?DBCode=CJFD&BaseID=JFYZ)（08/2023）
                 + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Neighborhood overlap-aware heterogeneous hypergraph neural network for link prediction"](https://www.sciencedirect.com/science/article/abs/pii/S0031320323005162) has benn accpetd to Pattern Recognition（07/2023）
-                + <font color=red>**[Paper]**</font>  Congratulations to Yifan Lu for his article ["Heterogeneous Link prediction via MutualInformation Maximization between Node Pairs"](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_37) has benn accpetd to CICAI（07/2023）
          
       
     design:
@@ -51,7 +49,7 @@ sections:
     content:
 
       title: Selected Publications
-      count: 10
+      count: 15
       text: |-
         {{% callout note %}}
         More on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=HaNhbi4AAAAJ).
@@ -267,6 +265,7 @@ sections:
             + ACM Multimedia Conference
             + The Web Conference
             + European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases
+            + ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
 
            ### Journal Reviewer
 
