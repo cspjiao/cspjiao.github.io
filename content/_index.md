@@ -16,7 +16,8 @@ sections:
     content:
       title: What's New
       text: |-
-                + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to ICDE 2024（03/2024)
+                + <font color=red>**[Paper]**</font>  Congratulations to Xinxun Zhang for his article ["VGGM: Variational Graph Gaussian Mixture Model for Unsupervised Change Point Detection in Dynamic Networks"]() has been accepted to ICDE 2024（03/2024)
+                + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to TIFS 2024（03/2024)
                 + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Hongjiang Chen on successfully passing the PhD interview（01/2024）
                 + <font color=red>**[Paper]**</font>  Congratulations to Zian Zhou for his article ["Fine-tuned Personality Federated Learning for Graph Data"](https://ieeexplore.ieee.org/abstract/document/10409567/) has benn accpetd to tbd（01/2024）
                 + <font color=orange>**[Award]**</font> Congratulations to Hongqian Chen on winning the [Huawei Scholarship](https://grs.hdu.edu.cn/2023/1228/c1736a255369/page.htm)（12/2023）
@@ -58,7 +59,7 @@ sections:
       filters:
         folders:
           - publication
-        featured_only: false
+        featured_only: true
         exclude_featured: false
     design:
       columns: '2'

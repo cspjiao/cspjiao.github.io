@@ -1,5 +1,6 @@
 ---
 title: 基于对比学习的全局增强动态异质图神经网络
+featured: true
 authors:
 - ' 焦鹏飞'
 - ' 刘欢'
