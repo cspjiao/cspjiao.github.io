@@ -390,7 +390,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: pjiao@hdu.edu.cn
       address:
-        street: 1158, No.2 Street, Baiyang Street, 
+        street: 1158, No.2 Street, Baiyang Street
         city: HangZhou
         region: Hangzhou Economic and Technological Development Zone
         postcode: '310018'
