@@ -1,7 +1,7 @@
 ---
 title: Generative Evolutionary Anomaly Detection in Dynamic Networks
 authors:
-- Pengfei Jiao
+- admin
 - Tianpeng Li
 - Yingjie Xie
 - Yinghui Wang

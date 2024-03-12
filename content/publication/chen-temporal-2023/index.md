@@ -2,7 +2,7 @@
 title: Temporal Graph Representation Learning with Adaptive Augmentation Contrastive
 authors:
 - Hongjiang Chen
-- Pengfei Jiao
+- admin
 - Huijun Tang
 - Huaming Wu
 date: '2023-01-01'

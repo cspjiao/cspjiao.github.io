@@ -2,7 +2,7 @@
 title: Enhancing Network Alignment through Multi-Scale Information Fusion
 authors:
 - Zhihao Chen
-- Pengfei Jiao
+- admin
 - Yinghui Wang
 - Huijun Tang
 - Jilin Zhang

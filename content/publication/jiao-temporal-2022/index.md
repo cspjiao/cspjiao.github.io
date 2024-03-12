@@ -1,7 +1,7 @@
 ---
 title: Temporal Network Embedding for Link Prediction via VAE Joint Attention Mechanism
 authors:
-- Pengfei Jiao
+- admin
 - Xuan Guo
 - Xin Jing
 - Dongxiao He

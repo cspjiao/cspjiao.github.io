@@ -3,7 +3,7 @@ title: Transformer Reasoning Network for Personalized Review Summarization
 authors:
 - Hongyan Xu
 - Hongtao Liu
-- Pengfei Jiao
+- admin
 - Wenjun Wang
 date: '2021-07-01'
 publishDate: '2024-03-12T01:17:25.093221Z'

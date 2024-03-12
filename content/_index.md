@@ -49,6 +49,7 @@ sections:
   - block: collection
     id: publications
     content:
+
       title: Selected Publications
       count: 10
       text: |-

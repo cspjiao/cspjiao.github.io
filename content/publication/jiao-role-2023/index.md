@@ -2,7 +2,7 @@
 title: Role Discovery-Guided Network Embedding Based on Autoencoder and Attention
   Mechanism
 authors:
-- Pengfei Jiao
+- admin
 - Qiang Tian
 - Wang Zhang
 - Xuan Guo

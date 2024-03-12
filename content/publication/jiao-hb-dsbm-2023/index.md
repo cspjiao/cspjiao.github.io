@@ -2,7 +2,7 @@
 title: 'HB-DSBM: Modeling the Dynamic Complex Networks From Community Level to Node
   Level'
 authors:
-- Pengfei Jiao
+- admin
 - Tianpeng Li
 - Huaming Wu
 - Chang-Dong Wang

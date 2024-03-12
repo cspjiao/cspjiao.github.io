@@ -2,7 +2,7 @@
 title: Enhancing Multi-Scale Diffusion Prediction via Sequential Hypergraphs and Adversarial
   Learning
 authors:
-- Pengfei Jiao
+- admin
 - Hongqian Chen
 - Wang Zhang
 - Huaming Wu

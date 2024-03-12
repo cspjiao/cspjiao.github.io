@@ -3,7 +3,7 @@ title: Modeling with Node Popularities for Autonomous Overlapping Community Dete
 authors:
 - Di Jin
 - Bingyi Li
-- Pengfei Jiao
+- admin
 - Dongxiao He
 - Hongyu Shan
 - Weixiong Zhang

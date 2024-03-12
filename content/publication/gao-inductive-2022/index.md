@@ -3,7 +3,7 @@ title: Inductive Link Prediction via Interactive Learning Across Relations in Mu
   Networks
 authors:
 - Mengzhou Gao
-- Pengfei Jiao
+- admin
 - Ruili Lu
 - Huaming Wu
 - Yinghui Wang

@@ -1,7 +1,7 @@
 ---
 title: A Survey on Role-Oriented Network Embedding
 authors:
-- Pengfei Jiao
+- admin
 - Xuan Guo
 - Ting Pan
 - Wang Zhang
