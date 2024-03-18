@@ -16,7 +16,8 @@ sections:
     content:
       title: What's New
       text: |-
-                + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang CHen for his article ["Contrastive Representation Learning on Dynamic Networks"]() has been accepted to NN（03/2024)
+                + <font color=red>**[Paper]**</font>  Congratulations to Xinxun Zhang Paper ["A Deep Contrastive Framework for Unsupervised Temporal Link Prediction in Dynamic Networks"]() has been accepted to Information Sciences（03/2024)
+                + <font color=red>**[Paper]**</font>  Congratulations to Hongjiang Chen for his article ["Contrastive Representation Learning on Dynamic Networks"]() has been accepted to NN（03/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Xinxun Zhang for his article ["VGGM: Variational Graph Gaussian Mixture Model for Unsupervised Change Point Detection in Dynamic Networks"]() has been accepted to TIFS（03/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Yuanqi Liu for her article ["CINA:Curvature-based Integrated Network Alignment with Hypergraph"]() has been accepted to ICDE（03/2024)
                 + <font color=orange>**[Award]**</font> Congratulations to  Huan Liu and Hongjiang Chen on successfully passing the PhD interview（01/2024）
