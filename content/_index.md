@@ -15,10 +15,10 @@ sections:
     id: news
     content:
       title: What's New
-      text: |-
+      text: |-  
+                + <font color=red>**[Paper]**</font>  Congratulations to Kaiyan Yu for her article ["Graph Contrastive Learning with Node-Level Accurate Difference"]() has been accepted to Fundamental Research （06/2024)
                 + <font color=red>**[Paper]**</font>  Paper ["Physical Process Guided Graph Neural Networks for Anomaly Detection in CPSs"]() has been accepted to the AI4TS Workshop@IJCAI 2024（06/2024)
                 + <font color=red>**[Paper]**</font>  Paper ["Disentangled Representation Learning for Structural Role Discovery"]() has been finalized and posted to the "Early Access" area on IEEE Xplore（06/2024)
-                + <font color=red>**[Paper]**</font>  Congratulations to Kaiyan Yu for her article ["Graph Contrastive Learning with Node-Level Accurate Difference"]() has been accepted to Fundamental Research （06/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Ying Jiang for his article ["Graph Contrastive Learning for Source Localization in Social Networks"]() has been accepted to Information Sciences（06/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Shuxin Chen for her article ["图神经常微分方程综述"]() has been accepted to 计算机研究与发展（05/2024)
                 + <font color=red>**[Paper]**</font>  Congratulations to Xinxun Zhang for his article ["A Deep Contrastive Framework for Unsupervised Temporal Link Prediction in Dynamic Networks"]() has been accepted to Information Sciences（03/2024)
