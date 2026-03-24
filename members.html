@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Team Members - Network Science & Cognitive Intelligence Lab" />
+  <title>Team Members | NSCI - HDU</title>
+  <link rel="icon" type="image/jpeg" href="fig/logot.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ========================================
+       🎨 GLOBAL STYLES
+    ======================================== */
+    :root {
+      --primary: #2563eb;
+      --secondary: #8b5cf6;
+      --accent: #06b6d4;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --dark: #0f172a;
+      --light: #ffffff;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-600: #475569;
+      --gray-900: #0f172a;
+      --gradient-primary: linear-gradient(45deg, #2563eb, #06b6d4);
+      --section-padding: 100px 0;
+      --card-radius: 16px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    
+    body { 
+      font-family: 'Inter', sans-serif; 
+      color: var(--dark); 
+      background: #f5f5f5; 
+      line-height: 1.6; 
+      overflow-x: hidden;
+      padding-top: 100px; 
+    }
+    
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    .container-custom { max-width: 1480px; margin: 0 auto; padding: 0 2rem; }
+
+    /* ========================================
+       3. NAVBAR STYLES (Smart Branding Only)
+    ======================================== */
+    .navbar { 
+      position: fixed; width: 100%; top: 0; z-index: 1000; 
+      padding: 0.8rem 0;
+      transition: all 0.5s ease;
+      background: rgba(255, 255, 255, 0.98); 
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .navbar-container { 
+      width: 94%; 
+      max-width: 1800px; 
+      margin: 0 auto; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between !important;
+    }
+
+    .navbar-left-group { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-divider { height: 25px; width: 1px; background-color: #cbd5e1; }
+    
+    .navbar-brand, .school-logo { display: flex; align-items: center; gap: 1rem; text-decoration: none; transition: all 0.3s ease; }
+    .navbar-logo { height: 42px; width: auto; transition: var(--transition); }
+    .school-logo { height: 48px; width: auto; padding-right: 0; }
+
+    .navbar-brand-text { display: flex; flex-direction: column; white-space: nowrap;}
+    .navbar-title { font-size: 1.2rem; font-weight: 700; font-family: 'Poppins', sans-serif; color: var(--dark); }
+    .navbar-subtitle { font-size: 0.75rem; opacity: 0.8; color: var(--gray-600); }
+    
+    /* 🔥 智能自适应品牌逻辑：解决导航栏溢出问题 */
+    @media (max-width: 1650px) {
+      .navbar-title { 
+        display: none !important; /* 强制隐藏长标题 */
+      }
+      
+      .navbar-subtitle {
+        font-size: 1.3rem !important;  /* 变大 */
+        font-weight: 700 !important;   /* 加粗 */
+        color: var(--dark) !important; /* 变黑 */
+        opacity: 1 !important;
+        margin-top: 0 !important;
+        letter-spacing: 0.5px;
+      }
+      
+      .navbar-logo {
+        height: 40px !important;
+      }
+    }
+
+    .navbar-menu { 
+      display: flex; 
+      align-items: center; 
+      gap: 1.8rem; /* 间距缩小以防溢出 */
+      list-style: none; margin: 0; padding: 0; 
+    }
+    
+    .navbar-menu a { 
+      text-decoration: none; 
+      transition: all 0.3s ease; 
+      position: relative; 
+      padding: 0.5rem 0;
+      font-family: 'Poppins', sans-serif;
+      white-space: nowrap;
+      color: var(--dark); 
+      font-weight: 450;
+      font-size: 18px;
+    }
+    
+    .navbar-menu a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gradient-primary); transition: width 0.3s; opacity: 0.8; }
+    .navbar-menu a:hover::after, .navbar-menu a.active::after { width: 100%; }
+    .navbar-menu a.active { color: var(--primary); font-weight: 600; }
+
+    /* Mobile Menu Btn */
+    .mobile-menu-btn { 
+      display: none; flex-direction: column; justify-content: space-around; 
+      width: 30px; height: 24px; background: transparent; border: none; cursor: pointer; padding: 0; z-index: 1001; transition: var(--transition); 
+    }
+    .mobile-menu-btn span { width: 100%; height: 3px; background: var(--dark); border-radius: 10px; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); transform-origin: center; }
+    .mobile-menu-btn.active span:nth-child(1) { transform: translateY(10.5px) rotate(45deg); }
+    .mobile-menu-btn.active span:nth-child(2) { opacity: 0; transform: translateX(-20px); }
+    .mobile-menu-btn.active span:nth-child(3) { transform: translateY(-10.5px) rotate(-45deg); }
+
+    .mobile-overlay { 
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh; 
+      background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); 
+      opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 998; 
+    }
+    .mobile-overlay.active { opacity: 1; visibility: visible; }
+
+    @media (max-width: 1400px) {
+      .mobile-menu-btn { display: flex; }
+      .navbar-menu { 
+        position: fixed; top: 0; right: 0; width: 320px; height: 100vh; 
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); 
+        flex-direction: column; align-items: stretch; padding: 6rem 2rem 2rem; gap: 0.8rem; 
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15); transform: translateX(100%); 
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); z-index: 999; overflow-y: auto; 
+        border-left: 1px solid rgba(0,0,0,0.05);
+      }
+      .navbar-menu.active { transform: translateX(0); }
+      .navbar-menu li { opacity: 0; transform: translateX(50px); list-style: none; }
+      .navbar-menu.active li { animation: slideInRight 0.5s ease forwards; }
+      .navbar-menu.active li:nth-child(1) { animation-delay: 0.1s; }
+      .navbar-menu a { 
+        display: block; width: 100%; padding: 1rem 1.5rem; font-size: 1.1rem; font-weight: 600;
+        color: var(--dark) !important; border-radius: 12px; background: white; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); border: 1px solid var(--gray-100);
+        transition: all 0.3s ease; text-align: left;
+      }
+      .navbar-menu a:hover, .navbar-menu a.active { 
+        background: var(--gradient-primary); color: white !important; 
+        transform: translateX(5px); box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25); border-color: transparent;
+      }
+      .navbar-menu a::after { display: none; }
+      .navbar-left-group { display: flex; } 
+    }
+    @keyframes slideInRight { to { opacity: 1; transform: translateX(0); } }
+    @media (max-width: 480px) {
+        .navbar-title { display: none; } 
+        .navbar-subtitle { display: none; }
+    }
+
+
+    /* ============================================================
+       🔵 GAOYUE.ORG REPLICA - FINAL STYLE
+       (Restored to Left Alignment)
+    ============================================================ */
+    
+    .gy-main-container {
+        width: 90%;
+        max-width: 1450px; 
+        margin: 60px auto;
+        padding: 0 20px;
+        font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+    }
+
+    /* Header Style */
+    .gy-header {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        margin-top: 60px;
+    }
+    
+    .gy-header h2 {
+        font-size: 24px;
+        color: #0056b3; 
+        font-weight: normal;
+        margin: 0;
+        line-height: 1;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .gy-header h2 .big-char {
+        font-size: 36px;
+        font-weight: bold;
+        margin-right: 4px;
+    }
+    
+    .gy-header h2 .small-chars {
+        color: #0056b3;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    /* Flex Grid */
+    .gy-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        /* ✅ 恢复：左对齐 */
+        justify-content: flex-start; 
+    }
+
+    /* Card Style (170px width) */
+    .gy-card {
+        width: 170px; 
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        text-align: center;
+        padding: 10px; 
+        transition: box-shadow 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .gy-card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        transform: translateY(-2px);
+    }
+
+    /* Photo Box */
+    .gy-photo-box {
+        width: 100%;
+        height: 200px; 
+        overflow: hidden;
+        margin-bottom: 12px;
+        background-color: #f0f0f0;
+        border-radius: 4px; 
+    }
+
+    .gy-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    /* Name */
+    .gy-name {
+        font-size: 17px; 
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 5px;
+    }
+
+    /* Description */
+    .gy-desc {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    /* Professor (PI) Container */
+    .gy-prof-container {
+        display: flex;
+        /* ✅ 恢复：左对齐 */
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .gy-pi-card {
+        width: 320px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px; 
+        text-align: center;
+        border: 1px solid #e0e0e0;
+    }
+
+    /* PI Photo Box */
+    .gy-pi-photo-box {
+        width: 100%;
+        height: 260px;  
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 4px; 
+    }
+
+    .gy-pi-name {
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+    .gy-pi-email {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 12px;
+        font-family: Arial, sans-serif;
+    }
+
+    .gy-pi-title {
+        font-size: 16px;
+        color: #222;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .gy-pi-school {
+        font-size: 15px;
+        color: #444;
+    }
+
+    /* Alumni List */
+    .gy-alumni-list {
+        margin-top: 10px;
+    }
+
+    .gy-alumni-row {
+        display: flex;
+        padding: 10px 0;
+        border-bottom: 1px dashed #ddd;
+        align-items: center;
+    }
+
+    .gy-alumni-name-col {
+        width: 150px; 
+        min-width: 150px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .gy-alumni-year-col {
+        width: 130px;
+        min-width: 130px;
+        font-weight: normal;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .gy-alumni-info-col {
+        flex-grow: 1;
+        color: #444;
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .gy-grid { justify-content: center; } 
+        .gy-pi-card { width: 100%; max-width: 300px; margin: 0 auto; }
+        .gy-alumni-row { flex-wrap: wrap; }
+        .gy-alumni-info-col { width: 100%; margin-top: 4px; padding-left: 120px; } 
+    }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    footer { 
+      background: var(--primary); 
+      color: white; 
+      padding: 4rem 0; 
+      margin-top: 5rem;
+    }
+
+    .imoon-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1480px;
+      margin: 0 auto;
+    }
+
+    .footer-left, .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-right { text-align: right; }
+
+    .footer-title {
+      font-size: 1.25rem; font-weight: 700; margin-bottom: 0.2rem; color: white;
+    }
+
+    .footer-text {
+      font-size: 1rem; opacity: 0.9; font-weight: 400; color: rgba(255, 255, 255, 0.9); font-family: 'Inter', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .imoon-footer { flex-direction: column; gap: 2rem; text-align: center; align-items: center; }
+      .footer-right { text-align: center; }
+    }
+
+    .page-loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s, visibility 0.5s; }
+    .page-loader.hidden { opacity: 0; visibility: hidden; }
+    .loader-spinner { width: 50px; height: 50px; border: 4px solid var(--gray-200); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <nav class="navbar solid" id="navbar">
+    <div class="navbar-container">
+      
+      <div class="navbar-left-group">
+        <img src="fig/hdu_logo.png" alt="HDU Logo" class="school-logo" />
+        
+        <div class="nav-divider"></div>
+
+        <a href="index.html" class="navbar-brand">
+          <img src="fig/logoz.png" alt="NSCI Logo" class="navbar-logo" />
+          <div class="navbar-brand-text">
+            <div class="navbar-title">Network Science & Cognitive Intelligence</div>
+            <div class="navbar-subtitle">NSCI - HDU</div>
+          </div>
+        </a>
+      </div>
+      
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#research">RESEARCH</a></li>
+        <li><a href="index.html#news">NEWS</a></li>
+        <li><a href="publication.html">PUBLICATIONS</a></li>
+        <li><a href="members.html" class="active">MEMBERS</a></li>
+        <li><a href="members_zh.html">中文</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" id="navbarToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="gy-main-container">
+
+    <div class="gy-header">
+      <h2><span class="big-char">P</span><span class="small-chars">I</span></h2>
+    </div>
+
+    <div class="gy-prof-container">
+      <div class="gy-pi-card">
+        <div class="gy-pi-photo-box">
+          <img src="fig/jpf.jpg" alt="Pengfei Jiao" class="gy-photo">
+        </div>
+        <div class="gy-pi-name">Pengfei Jiao</div>
+        <div class="gy-pi-email">pjiao@hdu.edu.cn</div>
+        <div class="gy-pi-title">Professor, Doctoral Supervisor</div>
+      </div>
+    </div>
+    
+    <div class="gy-header">
+      <h2><span class="big-char">M</span><span class="small-chars">ember</span></h2>
+    </div>
+
+    <div class="gy-grid">
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/gmz.png" alt="Mengzhou Gao" class="gy-photo">
+        </div>
+        <div class="gy-name">Mengzhou Gao</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/wyl.jpg" alt="Yuling Wang" class="gy-photo">
+        </div>
+        <div class="gy-name">Yuling Wang</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/bq.jpg" alt="Qing Bao" class="gy-photo">
+        </div>
+        <div class="gy-name">Qing Bao</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/zpl.jpg" alt="Pinlong Zhao" class="gy-photo">
+        </div>
+        <div class="gy-name">Pinlong Zhao</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/hnn.jpg" alt="Nana Huang" class="gy-photo">
+        </div>
+        <div class="gy-name">Nana Huang</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/sff.jpg" alt="Fangfang Su" class="gy-photo">
+        </div>
+        <div class="gy-name">Fangfang Su</div>
+      </div>
+    </div>
+
+
+    <div class="gy-header">
+      <h2><span class="big-char">P</span><span class="small-chars">h.D Students</span></h2>
+    </div>
+
+    <div class="gy-grid">
+      
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/lzh.jpg" alt="Zehao Liu" class="gy-photo">
+        </div>
+        <div class="gy-name">Zehao Liu</div>
+        <div class="gy-desc">2025 Ph.D</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/qhy.jpg" alt="Hanyan Qin" class="gy-photo">
+        </div>
+        <div class="gy-name">Hanyan Qin</div>
+        <div class="gy-desc">2025 Ph.D</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/ll.jpg" alt="Le Lv" class="gy-photo">
+        </div>
+        <div class="gy-name">Le Lv</div>
+        <div class="gy-desc">2025 Ph.D</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/ljf.jpg" alt="Junfeng Lin" class="gy-photo">
+        </div>
+        <div class="gy-name">Junfeng Lin</div>
+        <div class="gy-desc">2025 Ph.D</div>
+      </div>
+
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/lh.jpg" alt="Huan Liu" class="gy-photo">
+        </div>
+        <div class="gy-name">Huan Liu</div>
+        <div class="gy-desc">2024 Ph.D</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/chj.jpg" alt="Hongjiang Chen" class="gy-photo">
+        </div>
+        <div class="gy-name">Hongjiang Chen</div>
+        <div class="gy-desc">2024 Ph.D</div>
+      </div>
+    </div>
+
+
+    <div class="gy-header">
+      <h2><span class="big-char">M</span><span class="small-chars">aster Students</span></h2>
+    </div>
+
+    <div class="gy-grid">
+      
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/zh.jpeg" alt="Huan Zhou" class="gy-photo">
+        </div>
+        <div class="gy-name">Huan Zhou</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/ly.jpg" alt="Yin Li" class="gy-photo">
+        </div>
+        <div class="gy-name">Yin Li</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/wjj.jpg" alt="Jiajun Wang" class="gy-photo">
+        </div>
+        <div class="gy-name">Jiajun Wang</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/zjl(m).jpeg" alt="Junlong Zhao" class="gy-photo">
+        </div>
+        <div class="gy-name">Junlong Zhao</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/xl.jpeg" alt="Lei Xie" class="gy-photo">
+        </div>
+        <div class="gy-name">Lei Xie</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/qz.jpg" alt="Zheng Qian" class="gy-photo">
+        </div>
+        <div class="gy-name">Zheng Qian</div>
+        <div class="gy-desc">2025 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/wtx.jpg" alt="Tianxu Wang" class="gy-photo">
+        </div>
+        <div class="gy-name">Tianxu Wang</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/wkw.jpg" alt="Kaiwei Wang" class="gy-photo">
+        </div>
+        <div class="gy-name">Kaiwei Wang</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/lyl(2024).png" alt="Yinliang Liu" class="gy-photo">
+        </div>
+        <div class="gy-name">Yinliang Liu</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/zw.jpeg" alt="Wang Zeng" class="gy-photo">
+        </div>
+        <div class="gy-name">Wang Zeng</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/cz.jpeg" alt="Zhe Chen" class="gy-photo">
+        </div>
+        <div class="gy-name">Zhe Chen</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/jyj.jpg" alt="Jiayi Jin" class="gy-photo">
+        </div>
+        <div class="gy-name">Jiayi Jin</div>
+        <div class="gy-desc">2024 Master</div>
+      </div>
+
+      
+
+
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/xy.jpeg" alt="Yang Xu" class="gy-photo">
+        </div>
+        <div class="gy-name">Yang Xu</div>
+        <div class="gy-desc">2023 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/yjt.jpg" alt="Jinting Ye" class="gy-photo">
+        </div>
+        <div class="gy-name">Jinting Ye</div>
+        <div class="gy-desc">2023 Master</div>
+      </div>
+
+      <div class="gy-card">
+        <div class="gy-photo-box">
+          <img src="fig/zjl.jpg" alt="Jieling Zhang" class="gy-photo">
+        </div>
+        <div class="gy-name">Jieling Zhang</div>
+        <div class="gy-desc">2023 Master</div>
+      </div>
+    </div>
+
+
+    <div class="gy-header">
+      <h2><span class="big-char">A</span><span class="small-chars">lumni</span></h2>
+    </div>
+
+    <div class="gy-alumni-list">
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Xinxun Zhang</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Ying Jiang</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Kanyan Yu</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Hongqian Chen</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Ming Du</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Zi'an Zhou</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Yuanqi Liu</div>
+        <div class="gy-alumni-year-col">(2022-2025)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Huan Liu</div>
+        <div class="gy-alumni-year-col">(2021-2024)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Peng Yan</div>
+        <div class="gy-alumni-year-col">(2021-2024)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Zhihao Chen</div>
+        <div class="gy-alumni-year-col">(2021-2024)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Zi'an Wu</div>
+        <div class="gy-alumni-year-col">(2021-2024)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+      <div class="gy-alumni-row">
+        <div class="gy-alumni-name-col">Weijian Song</div>
+        <div class="gy-alumni-year-col">(2021-2024)</div>
+        <div class="gy-alumni-info-col">Master Graduate</div>
+      </div>
+    </div>
+
+  </div> 
+
+  <footer>
+    <div class="container-custom">
+      <div class="imoon-footer">
+        
+        <div class="footer-left">
+          <h3 class="footer-title">NSCI: Network Science & Cognitive Intelligence</h3>
+          <div class="footer-text">School of Cyberspace Security, Hangzhou Dianzi University</div>
+          <div class="footer-text">Hangzhou 310018, China</div>
+        </div>
+
+        <div class="footer-right">
+          <h3 class="footer-title">Copyright © 2022-2026</h3>
+          <div class="footer-text">All Rights Reserved.</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 800, once: true, offset: 100 });
+    
+    // Page Loader Logic
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('pageLoader');
+      setTimeout(() => { loader.classList.add('hidden'); }, 500);
+    });
+
+    // Mobile Menu Logic
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    const menuLinks = menu.querySelectorAll('a'); 
+
+    function toggleMenu() {
+      toggle.classList.toggle('active'); 
+      menu.classList.toggle('active');   
+      overlay.classList.toggle('active'); 
+      
+      if (menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeMenu() {
+      toggle.classList.remove('active');
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1400) {
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+</html>

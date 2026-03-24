@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Network Science & Cognitive Intelligence - NSCI Lab at Hangzhou Dianzi University, focusing on Graph Neural Networks, AI Security, and Graph Intelligence Applications." />
+  <meta name="keywords" content="Graph Neural Networks, AI Security, Network Science, Machine Learning, HDU" />
+  <meta name="author" content="Network Science & Cognitive Intelligence" />
+
+  <title>NSCI - Network Science & Cognitive Intelligence | HDU</title>
+  <link rel="icon" type="image/jpeg" href="fig/logot.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* ========================================
+       🎨 GLOBAL STYLES (Synced with Chinese Version)
+    ======================================== */
+    :root {
+      --primary: #2563eb;
+      --secondary: #8b5cf6;
+      --accent: #06b6d4;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444; 
+      --dark: #0f172a;
+      --light: #ffffff;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-600: #475569;
+      --gray-900: #0f172a;
+      --gradient-primary: linear-gradient(45deg, #2563eb, #06b6d4);
+      --section-padding: 100px 0;
+      --card-radius: 16px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); background: #f6f6f6; line-height: 1.6; overflow-x: hidden; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+
+    /* Section Title Style */
+    .section-title {
+      font-size: 2.2rem; 
+      font-weight: 400; 
+      text-align: center; 
+      margin-bottom: 2rem; 
+      color: var(--dark); 
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 200px; 
+      height: 8px; 
+      background: var(--primary); 
+      margin: 10px auto 0 auto;
+      border-radius: 2px;
+    }
+    
+    .section { padding: 1.5rem 0; }
+    .section-light { background: var(--light); }
+    .container-custom { max-width: 1480px; margin: 0 auto; padding: 0 2rem; }
+    .btn-primary-gradient {
+      background: var(--gradient-primary); color: white; padding: 0.875rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: var(--transition); border: none; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+    .btn-primary-gradient:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4); color: white; }
+
+    /* ========================================
+       1. Hero Area (Responsive Fix)
+    ======================================== */
+    .hero-wrapper {
+      position: relative;
+      height: 48vh; 
+      min-height: 550px;
+      width: 100%;
+      background-image: url('fig/bg.jpg'); 
+      background-size: cover;
+      background-position: center bottom;
+      background-attachment: scroll; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10, 25, 47, 0.45);
+      z-index: 1;
+    }
+
+    .hero-content-new {
+      position: relative; 
+      z-index: 2; 
+      transform: translateY(-20px);
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .hero-header-group {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 1rem;
+      margin-top: 80px;
+    }
+
+    .hero-big-logo {
+      width: 400px;
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    }
+
+    .hero-text-group { text-align: left; }
+
+    .hero-title-cn {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem); 
+      font-weight: 800; 
+      margin-bottom: 0.2rem;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .hero-title-en {
+      font-size: clamp(0.9rem, 1.2vw, 1.2rem); 
+      font-weight: 300; 
+      opacity: 0.9; 
+      letter-spacing: 1px;
+    }
+
+    .calligraphy-text {
+      font-family: 'Ma Shan Zheng', cursive;
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      margin-top: 0rem;
+      color: rgba(255,255,255,0.98);
+      text-shadow: 0 5px 20px rgba(0,0,0,0.6); 
+      letter-spacing: 0.15em;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ========================================
+       2. Intro Card (Responsive Fix)
+    ======================================== */
+    .intro-container {
+      position: relative;
+      z-index: 10;
+      margin: 0 auto;
+      margin-top: -60px;
+      margin-bottom: 3rem;
+      width: 90%; 
+      max-width: 1500px;
+    }
+
+    .intro-card {
+      background: white;
+      border-radius: 10px;
+      padding: 3rem 5rem;
+      border: 5px solid var(--primary);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .intro-title {
+      text-align: center; font-size: 2rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem;
+    }
+
+    .intro-divider {
+      width: 120px; height: 6px; background: var(--primary); margin: 0 auto 2.5rem auto; border-radius: 3px;
+    }
+
+    .intro-body p {
+      font-size: 1.6rem; 
+      line-height: 1.7;
+      color: #333; 
+      margin-bottom: 0rem;
+      text-indent: 2em; 
+      text-align: justify;
+    }
+
+    @media (max-width: 1200px) {
+      .intro-card { padding: 2.5rem 3rem; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-wrapper { height: 40vh; }
+      .intro-container { width: 92%; margin-top: -30px; } 
+      .intro-card { padding: 2rem 1.5rem; }
+      .calligraphy-text { font-size: 2.5rem; letter-spacing: 0.05em; }
+      .hero-header-group { flex-direction: column; text-align: center; }
+      .hero-text-group { text-align: center; }
+      .intro-body p { font-size: 1.2rem; }
+    }
+
+    /* ========================================
+       3. Navbar Styles
+    ======================================== */
+    .navbar { 
+      position: fixed; width: 100%; top: 0; z-index: 1000; 
+      padding: 1.2rem 0; 
+      transition: all 0.5s ease;
+    }
+
+    .navbar.transparent { 
+      background: transparent; 
+      box-shadow: none; 
+      padding-top: 1.8rem; 
+    }
+
+    .navbar.solid { 
+      background: rgba(255, 255, 255, 0.98); 
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.8rem 0;
+    }
+
+    .navbar-container { 
+      width: 94%; 
+      max-width: 1800px; 
+      margin: 0 auto; 
+      display: flex; 
+      align-items: center; 
+    }
+    
+    .navbar.transparent .navbar-container {
+      justify-content: flex-end !important; 
+    }
+    .navbar.solid .navbar-container {
+      justify-content: space-between !important;
+    }
+
+    .navbar-brand, .school-logo { display: flex; align-items: center; gap: 1rem; text-decoration: none; transition: all 0.3s ease; }
+    
+    .navbar-logo { height: 45px; width: auto; transition: var(--transition); }
+    .school-logo { height: 38px; width: auto; margin-right: 1.5rem; transition: all 0.5s; }
+
+    .navbar-brand-text { display: flex; flex-direction: column; white-space: nowrap;}
+    .navbar-title { font-size: 1.2rem; font-weight: 700; font-family: 'Poppins', sans-serif; color: var(--dark); }
+    .navbar-subtitle { font-size: 0.75rem; opacity: 0.8; color: var(--gray-600); }
+    
+    /* 🔥 智能自适应品牌逻辑 (SMART BRANDING LOGIC)
+       当屏幕宽度小于 1650px (大部分笔记本) 时，
+       1. 隐藏长标题
+       2. 将 NSCI - HDU 放大、加黑、居中
+    */
+    @media (max-width: 1650px) {
+      .navbar-title { 
+        display: none !important; /* 强制隐藏长标题 */
+      }
+      
+      .navbar-subtitle {
+        font-size: 1.3rem !important;  /* 变大，接近原标题大小 */
+        font-weight: 700 !important;   /* 加粗 */
+        color: var(--dark) !important; /* 变黑 */
+        opacity: 1 !important;         /* 取消透明度 */
+        margin-top: 0 !important;
+        letter-spacing: 0.5px;
+      }
+      
+      /* 只有短标题时，稍微调整一下 Logo 大小让它更协调 */
+      .navbar-logo {
+        height: 40px !important;
+      }
+    }
+
+    .navbar-menu { 
+      display: flex; 
+      align-items: center; 
+      gap: 1.8rem; 
+      list-style: none; margin: 0; padding: 0; 
+    }
+    
+    .navbar-menu a { 
+      text-decoration: none; 
+      transition: all 0.3s ease; 
+      position: relative; 
+      padding: 0.5rem 0;
+      font-family: 'Poppins', sans-serif;
+      white-space: nowrap;
+    }
+
+    .navbar.transparent .navbar-menu a { 
+      color: rgba(255, 255, 255, 0.65);
+      font-weight: 450;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    } 
+    
+    .navbar.transparent .navbar-menu a:hover,
+    .navbar.transparent .navbar-menu a.active {
+      color: #ffffff;
+      opacity: 1;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .navbar.solid .navbar-menu a { 
+      color: var(--dark); 
+      font-weight: 450;
+      font-size: 18px;
+    }
+    
+    .navbar-menu a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: white; transition: width 0.3s; opacity: 0.8; }
+    .navbar.solid .navbar-menu a::after { background: var(--gradient-primary); height: 2px; }
+    .navbar-menu a:hover::after, .navbar-menu a.active::after { width: 100%; }
+    
+    /* Hamburger Button */
+    .mobile-menu-btn { 
+      display: none; 
+      flex-direction: column; 
+      justify-content: space-around; 
+      width: 30px; 
+      height: 24px; 
+      background: transparent; 
+      border: none; 
+      cursor: pointer; 
+      padding: 0; 
+      z-index: 1001; 
+      transition: var(--transition); 
+    }
+    
+    .mobile-menu-btn span { 
+      width: 100%; 
+      height: 3px; 
+      background: var(--dark); 
+      border-radius: 10px; 
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+      transform-origin: center; 
+    }
+
+    .navbar.transparent .mobile-menu-btn span { background: white; }
+    .navbar.solid .mobile-menu-btn span,
+    .mobile-menu-btn.active span { background: var(--dark); }
+
+    /* Button Active State (X) */
+    .mobile-menu-btn.active span:nth-child(1) { transform: translateY(10.5px) rotate(45deg); }
+    .mobile-menu-btn.active span:nth-child(2) { opacity: 0; transform: translateX(-20px); }
+    .mobile-menu-btn.active span:nth-child(3) { transform: translateY(-10.5px) rotate(-45deg); }
+
+    /* Mobile Overlay */
+    .mobile-overlay { 
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh; 
+      background: rgba(0, 0, 0, 0.6); 
+      backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); 
+      opacity: 0; visibility: hidden; 
+      transition: all 0.3s ease; 
+      z-index: 998; 
+    }
+    .mobile-overlay.active { opacity: 1; visibility: visible; }
+
+    /* Mobile Responsive Logic */
+    @media (max-width: 1400px) {
+      .navbar.transparent .navbar-container { justify-content: space-between; }
+      
+      .mobile-menu-btn { display: flex; }
+      
+      .navbar-menu { 
+        position: fixed; top: 0; right: 0; 
+        width: 320px; 
+        height: 100vh; 
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); 
+        flex-direction: column; 
+        align-items: stretch; 
+        padding: 6rem 2rem 2rem; 
+        gap: 0.8rem; 
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15); 
+        transform: translateX(100%); 
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+        z-index: 999; 
+        overflow-y: auto; 
+        border-left: 1px solid rgba(0,0,0,0.05);
+      }
+
+      .navbar-menu.active { transform: translateX(0); }
+
+      .navbar-menu li { opacity: 0; transform: translateX(50px); list-style: none; }
+      .navbar-menu.active li { animation: slideInRight 0.5s ease forwards; }
+      .navbar-menu.active li:nth-child(1) { animation-delay: 0.1s; }
+      .navbar-menu.active li:nth-child(2) { animation-delay: 0.15s; }
+      .navbar-menu.active li:nth-child(3) { animation-delay: 0.2s; }
+      .navbar-menu.active li:nth-child(4) { animation-delay: 0.25s; }
+      .navbar-menu.active li:nth-child(5) { animation-delay: 0.3s; }
+      .navbar-menu.active li:nth-child(6) { animation-delay: 0.35s; }
+      .navbar-menu.active li:nth-child(7) { animation-delay: 0.4s; }
+
+      .navbar-menu a { 
+        display: block; 
+        width: 100%; 
+        padding: 1rem 1.5rem; 
+        font-size: 1.1rem; 
+        font-weight: 600;
+        color: var(--dark) !important; 
+        border-radius: 12px; 
+        background: white; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); 
+        border: 1px solid var(--gray-100);
+        transition: all 0.3s ease; 
+        text-align: left;
+      }
+
+      .navbar-menu a:hover { 
+        background: var(--gradient-primary); 
+        color: white !important; 
+        transform: translateX(5px); 
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25); 
+        border-color: transparent;
+      }
+      
+      .navbar-menu a::after { display: none; }
+    }
+
+    @keyframes slideInRight { to { opacity: 1; transform: translateX(0); } }
+
+    /* Navbar Left Group Logic */
+    .navbar-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-left-group {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem; 
+    }
+
+    .navbar.transparent .navbar-left-group {
+      display: none;
+    }
+
+    .navbar.solid .navbar-left-group {
+      display: flex;
+    }
+
+    .navbar.solid .school-logo {
+      border-right: none; 
+      padding-right: 0;   
+      height: 48px;       
+      width: auto;
+    }
+
+    .nav-divider {
+      height: 25px;
+      width: 1px;
+      background-color: #cbd5e1; 
+    }
+
+    .navbar.solid .navbar-logo {
+      height: 42px;       
+    }
+
+
+    /* ========================================
+       4. News List Styles
+    ======================================== */
+    .news-list { 
+      max-width: 1050px; 
+      margin: 0 auto; 
+      padding: 0; 
+      list-style: none; 
+    }
+
+    .news-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding: 0.88rem 0; 
+      border-bottom: none; 
+      transition: var(--transition);
+      text-decoration: none; 
+      color: var(--dark); 
+    }
+
+    @media (max-width: 992px) {
+      .news-item {
+        border-bottom: 1px solid var(--gray-200); 
+        padding: 1.2rem 0; 
+      }
+    }
+
+    .news-date {
+      flex-shrink: 0;
+      width: 115px; 
+      font-size: 1.45rem;
+      font-weight: 500;
+      color: var(--danger); 
+      margin-right: 6rem;
+      letter-spacing: nowrap;
+    }
+
+    .news-title-link {
+      flex-grow: 1;
+      font-size: 1.55rem;
+      font-weight: 400; 
+      color: var(--dark);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .news-item:hover .news-title-link {
+      color: var(--primary); 
+    }
+    
+    .btn-outline-primary-new {
+      padding: 0.45rem 1.5rem; 
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0; 
+      transition: var(--transition);
+      color: var(--dark);
+      border: 3px solid var(--primary); 
+      background: transparent;
+      font-size: 1.05rem;
+    }
+    .btn-outline-primary-new:hover {
+      color: white;
+      background: var(--primary);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* ========================================
+       5. Publications Styles
+    ======================================== */
+    .publications-list { 
+      width: 100%;      
+      max-width: none;  
+      margin: 0 auto; 
+      font-family: 'Times New Roman', Times, serif; 
+    }
+    
+    .publication-item { 
+      background: transparent; 
+      border-radius: 0; 
+      box-shadow: none; 
+      border-left: none;
+      padding: 0.8rem 0; 
+      border-bottom: 1px solid #e4e6eb; 
+      display: block; 
+      text-align: left;
+      transition: var(--transition);
+    }
+    
+    .publication-content-wrapper {
+      display: inline;
+    }
+
+    .publication-header { 
+      display: inline; 
+      margin-right: 8px;
+    }
+    
+    .publication-badge { 
+      display: inline-block;
+      padding: 0.2rem 0.8rem; 
+      border-radius: 50px;    
+      font-size: 1.0rem; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 0.5px; 
+      color: white;
+      vertical-align: middle;
+      margin-top: -2px; 
+    }
+    
+    .badge-pr { background: #8b5cf6; }  
+    .badge-ieee { background: #2563eb; } 
+    .badge-ijcai { background: #f59e0b; } 
+    
+    .publication-year { 
+      display: none; 
+    }
+    
+    .publication-title { 
+      display: inline; 
+      font-size: 1.45rem; 
+      line-height: 1.6; 
+      color: var(--dark); 
+      font-weight: 400; 
+    }
+    
+    .publication-title a { 
+      color: var(--dark); 
+      text-decoration: none; 
+      transition: color 0.2s;
+    }
+    .publication-title a:hover { 
+      color: var(--primary); 
+      text-decoration: none; 
+    }
+    
+    .pub-code-btn { 
+      display: inline-block;
+      margin-left: 10px;
+      font-family: sans-serif; 
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    
+    .pub-code-btn:hover { 
+      color: var(--primary);
+      text-decoration: underline;
+      transform: none; 
+      box-shadow: none;
+      background: none;
+    }
+
+    .research-card-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+    .research-card { 
+      background: white; 
+      border-radius: var(--card-radius); 
+      overflow: hidden; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+      transition: var(--transition); 
+      height: 100%; 
+      position: relative; 
+      cursor: pointer; 
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .research-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--gradient-primary); transform: scaleX(0); transition: var(--transition); }
+    .research-card:hover::before { transform: scaleX(1); }
+    .research-card:hover { transform: translateY(-10px) rotateX(5deg); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); }
+    .research-image { width: 100%; height: 220px; object-fit: cover; transition: var(--transition); }
+    .research-card:hover .research-image { transform: scale(1.1); }
+    .research-image-container { overflow: hidden; position: relative; }
+    .research-content { padding: 2rem; text-align: center; }
+    
+    .research-title { 
+      font-size: 2rem; 
+      font-weight: 800; 
+      margin-bottom: 1.2rem; 
+      color: var(--dark); 
+    }
+
+    .research-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .research-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--gray-600);
+    }
+
+    .research-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--dark); 
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    
+    .research-tags { display: none; }
+
+    /* ========================================
+       FOOTER (iMoon Style Refined)
+    ======================================== */
+    footer { 
+      background: var(--primary); 
+      color: white; 
+      padding: 4rem 0; 
+    }
+
+    .imoon-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1480px;
+      margin: 0 auto;
+    }
+
+    .footer-left, .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-right {
+      text-align: right; 
+    }
+
+    .footer-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      color: white;
+    }
+
+    .footer-text {
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.9);
+      font-family: 'Inter', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .imoon-footer {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        align-items: center;
+      }
+      .footer-right {
+        text-align: center;
+      }
+    }
+
+    .page-loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s, visibility 0.5s; }
+    .page-loader.hidden { opacity: 0; visibility: hidden; }
+    .loader-spinner { width: 50px; height: 50px; border: 4px solid var(--gray-200); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <nav class="navbar transparent" id="navbar">
+    <div class="navbar-container">
+      
+      <div class="navbar-left-group">
+        <img src="fig/hdu_logo.png" alt="HDU Logo" class="school-logo" />
+        
+        <div class="nav-divider"></div>
+
+        <a href="#hero" class="navbar-brand">
+          <img src="fig/logoz.png" alt="NSCI Logo" class="navbar-logo" />
+          <div class="navbar-brand-text">
+            <div class="navbar-title">Network Science & Cognitive Intelligence</div>
+            <div class="navbar-subtitle">NSCI - HDU</div>
+          </div>
+        </a>
+      </div>
+
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#research">RESEARCH</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#publications">PUBLICATIONS</a></li>
+        <li><a href="members.html">MEMBERS</a></li>
+        <li><a href="index_zh.html">中文</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" id="navbarToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="hero-wrapper" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content-new" data-aos="fade-in">
+      
+      <div class="hero-header-group">
+        <img src="fig/logo.png" alt="NSCI Logo" class="hero-big-logo" />
+        
+        <div class="hero-text-group">
+          <div class="hero-title-cn">网络科学与认知智能实验室</div>
+          <div class="hero-title-en">Network Science & Cognitive Intelligence Lab</div>
+        </div>
+      </div>
+      
+      <div class="calligraphy-text">
+        万物皆网络，智能有认知
+      </div>
+    </div>
+  </div>
+
+  <div class="intro-container">
+    <div class="intro-card" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="intro-title">Network Science & Cognitive Intelligence</h2>
+      <div class="intro-divider"></div>
+      
+      <div class="intro-body" id="about">
+        <p>
+          The Laboratory of Network Science and Cognitive Intelligence (NSCI Lab) aligns itself with the international frontiers of complex networks and intelligent computing, focusing on the cross-disciplinary integration of "complex graph data, cognitive modeling, and intelligent decision-making" to construct a next-generation graph intelligence research system that harmonizes theoretical depth with practical utility. With complex graph representation learning as its core foundation, the laboratory systematically conducts research on multi-dimensional graph data modeling methodologies, emphasizing three critical dimensions: topological structure, semantic information, and temporal evolution. It explores unified representations and efficient learning methods for multi-scale structural patterns and dynamic behavioral mechanisms within complex systems.
+        </p>  
+        <p>
+          Building upon this, the laboratory further extends its scope to the domain of trustworthy and secure graph modeling. Addressing critical issues such as insufficient robustness, vulnerability to adversarial attacks, and opacity in decision-making of complex graph models in open environments, the lab conducts research on robust generalization mechanisms, security defense methodologies, and trustworthiness enhancement technologies to develop an interpretable, verifiable, and deployable graph intelligence model framework.
+        </p>  
+        <p>
+          Oriented toward national strategic imperatives and the development of the digital economy, the laboratory actively promotes the practical application of graph intelligence in intelligent scenarios, with strategic emphasis on financial security, system security, and social governance. This creates a comprehensive technological chain extending from foundational theoretical breakthroughs to engineering application validation.
+        </p>
+        <p>  
+          In recent years, the laboratory has achieved a series of representative research milestones in complex graph representation learning, dynamic graph modeling, and graph model security. It has proposed multi-level structural modeling methods, heterogeneous semantic fusion mechanisms, and evolution-oriented dynamic graph learning frameworks. These achievements have been validated in practical scenarios such as cyberspace security, internet financial risk control, and public opinion governance.
+        </p>
+        <p>
+          In the future, the laboratory will continue to revolve around the core axis of "topological understanding – cognitive mechanism modeling – intelligent decision optimization." By driving the deep integration of network science and artificial intelligence, the lab strives to achieve internationally influential and groundbreaking results in foundational complex graph theory and trustworthy intelligent systems.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section id="research" class="section">
+    <div class="container-custom">
+      <h2 class="section-title" data-aos="fade-up">RESEARCH</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <a href="research-complex-graph.html" class="research-card-link">
+            <div class="research-card">
+              <div class="research-image-container">
+                <img src="fig/GNN.jpg" alt="复杂图表征学习" class="research-image" />
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Complex Graph Representation Learning</h3>
+                <ul class="research-list">
+                  <li>Topology Dimension</li>
+                  <li>Semantic Dimension</li>
+                  <li>Time Dimension</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <a href="research-graph-security.html" class="research-card-link">
+            <div class="research-card">
+              <div class="research-image-container">
+                <img src="fig/tml.jpg" alt="图模型可信安全" class="research-image" />
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Trusted and Secure Graph Models</h3>
+                <ul class="research-list">
+                  <li>Robust Generalization</li>
+                  <li>Safety Protection</li>
+                  <li>Trust Enhancement</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <a href="research-graph-applications.html" class="research-card-link">
+            <div class="research-card">
+              <div class="research-image-container">
+                <img src="fig/cps.jpg" alt="图智能应用" class="research-image" />
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Intelligent Application Scenarios</h3>
+                <ul class="research-list">
+                  <li>Financial Security</li>
+                  <li>System Security</li>
+                  <li>Social Security</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="section">
+    <div class="container-custom">
+      <h2 class="section-title" data-aos="fade-up">NEWS</h2>
+
+      <div class="news-list">
+        
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="news-date" style="color: var(--danger);">2026-02</div>
+          <div class="news-title-link">
+            The team PI won the Second Prize of the 2025 Wu Wen Jun AI Nature Science Award.
+          </div>
+        </a>
+        
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="news-date" style="color: var(--primary);">2026-02</div>
+          <div class="news-title-link">
+            One paper (An Empirical Study Challenging the Ability of Heterogeneous Graph Neural Networks to Effectively Learn Topological Structures) has been accepted by the top international journal IEEE Transactions on Big Data.
+          </div>
+        </a>
+
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-date" style="color: var(--primary);">2026-01</div>
+          <div class="news-title-link">
+            Three papers (Unequal Vulnerability: The Differential Impact of Label..., etc.) have been accepted by the top international conference WWW 2026.
+          </div>
+        </a>
+
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="news-date" style="color: var(--primary);">2026-01</div>
+          <div class="news-title-link">
+            One paper (PROTOTYPE-BASED INFORMATION BOTTLENECK FOR EXPLAINABLE HETEROGENEOUS TEMPORAL GRAPH NEURAL NETWORKS) has been accepted by the top international conference ICASSP 2026.
+          </div>
+        </a>
+
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-date" style="color: var(--danger);">2025-12</div>
+          <div class="news-title-link">
+            A lab member was selected for the 2025 Doctoral Program of the Young Scientific and Technological Talents Cultivation Project by CAST.
+          </div>
+        </a>
+
+        <a href="#" class="news-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="news-date" style="color: var(--primary);">2025-03</div>
+          <div class="news-title-link">
+            One paper (Interactive Graph Learning for Multilevel Network Alignment) has been accepted by IEEE TNNLS 2025.
+          </div>
+        </a>
+
+      </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="news.html" class="btn-outline-primary-new">
+           MORE NEWS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container-custom">
+      <h2 class="section-title" data-aos="fade-up">SELECTED PUBLICATIONS</h2>
+
+      <div class="publications-list">
+          
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-ieee">IEEE TNNLS</span>
+                <span class="publication-year">2025</span> </div>
+              <div class="publication-title">
+                <a href="https://ieeexplore.ieee.org/abstract/document/11123717/" target="_blank">
+                  Jiao P, Liu Y, Wang Y, et al. Interactive Graph Learning for Multilevel Network Alignment. IEEE Transactions on Neural Networks and Learning Systems, 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/11123717/" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-ijcai">IJCAI</span>
+                <span class="publication-year">2025</span>
+              </div>
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2507.07405" target="_blank">
+                  Jiao P, Ni J, Jin D, et al. HGMP: Heterogeneous Graph Multi-Task Prompt Learning. IJCAI 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://arxiv.org/abs/2507.07405" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-pr">PR</span>
+                <span class="publication-year">2025</span>
+              </div>
+              <div class="publication-title">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0031320325007137" target="_blank">
+                  Chen H, Jiao P, Du M, et al. TGFormer: Towards temporal graph transformer with auto-correlation mechanism. Pattern Recognition, 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://github.com/cspjiao/TGFormer" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-ieee">IEEE TNNLS</span>
+                <span class="publication-year">2025</span>
+              </div>
+              <div class="publication-title">
+                <a href="https://ieeexplore.ieee.org/abstract/document/11061250/" target="_blank">
+                  Gao M, Zhang X, Jiao P, et al. DVGMAE: Self-Supervised Dynamic Variational Graph Masked Autoencoder. IEEE Transactions on Neural Networks and Learning Systems, 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/11061250/" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-ijcai">IJCAI</span>
+                <span class="publication-year">2025</span>
+              </div>
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2506.17312" target="_blank">
+                  Liu H, Jiao P, Gao M, et al. Heterogeneous Temporal Hypergraph Neural Network. IJCAI 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://arxiv.org/abs/2506.17312" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="publication-content-wrapper">
+              <div class="publication-header">
+                <span class="publication-badge badge-ijcai">IJCAI</span>
+                <span class="publication-year">2025</span>
+              </div>
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2506.07428" target="_blank">
+                  Wang Y, Chen Z, Jiao P, et al. HeTa: Relation-wise Heterogeneous Graph Foundation Attack Model. IJCAI 2025
+                </a>
+              </div>
+            </div>
+            <a href="https://arxiv.org/abs/2506.07428" class="pub-code-btn" target="_blank">
+              [Code]
+            </a>
+          </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="publication.html" class="btn-primary-gradient">
+          <i class="fas fa-book-open"></i> MORE PUBLICATIONS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-custom">
+      <div class="imoon-footer">
+        
+        <div class="footer-left">
+          <h3 class="footer-title">NSCI: Network Science & Cognitive Intelligence</h3>
+          <div class="footer-text">School of Cyberspace Security, Hangzhou Dianzi University</div>
+          <div class="footer-text">Hangzhou 310018, China</div>
+        </div>
+
+        <div class="footer-right">
+          <h3 class="footer-title">Copyright © 2022-2026</h3>
+          <div class="footer-text">All Rights Reserved.</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+    
+    // Page Loader
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('pageLoader');
+      setTimeout(() => { loader.classList.add('hidden'); }, 500);
+    });
+
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        navbar.classList.remove('transparent');
+        navbar.classList.add('solid');
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('solid');
+      }
+    });
+
+    // 汉堡按钮逻辑
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    const menuLinks = menu.querySelectorAll('a'); 
+
+    function toggleMenu() {
+      toggle.classList.toggle('active'); 
+      menu.classList.toggle('active');   
+      overlay.classList.toggle('active'); 
+      
+      if (menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeMenu() {
+      toggle.classList.remove('active');
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1400) {
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+</html>
